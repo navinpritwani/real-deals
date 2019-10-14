@@ -274,7 +274,6 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    border-radius: 24px;
 }
 
 button,
@@ -3056,7 +3055,7 @@ pre code {
     background-color: #fff;
     background-clip: padding-box;
     border: 2px solid #dde2ec;
-    border-radius: 24px;
+    border-radius: 4px;
     -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
@@ -4327,7 +4326,7 @@ fieldset:disabled .all-wrapper a.fc-button,
 
 .btn-link {
     font-weight: 400;
-    color: #186ab0;
+    color: #047bf8;
     background-color: transparent;
 }
 
@@ -11869,7 +11868,6 @@ a.text-dark:focus {
 
 label {
     margin-bottom: 4px;
-    margin-left: 12px;
 }
 
 button,
@@ -12025,7 +12023,7 @@ fieldset {
 legend {
     font-size: .99rem;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
     color: #047bf8;
 }
@@ -12036,7 +12034,6 @@ legend span {
     display: inline-block;
     z-index: 2;
     position: relative;
-    color: #186ab0;
 }
 
 legend:before {
@@ -18491,7 +18488,7 @@ a.el-tablo:hover .label {
 }
 
 .auth-box-w.wider {
-    max-width: 85%;
+    max-width: 500px;
 }
 
 .auth-box-w .logged-user-w {

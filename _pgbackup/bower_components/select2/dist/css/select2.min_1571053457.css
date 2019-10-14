@@ -655,23 +655,3 @@ tr {
     padding-top: 6px;
     padding-bottom: 6px;
 }
-
-.wider.auth-box-w .logo-w {
-    padding: 32px;
-}
-
-.wider.auth-box-w .auth-header {
-    margin-bottom: 8px;
-}
-
-.wider.auth-box-w .os-tabs-complex .nav-tabs .nav-item .tab-label {
-    font-size: 1em;
-}
-
-.wider.auth-box-w .os-tabs-w .os-tabs-complex .nav-tabs .nav-item .nav-link.active .tab-label {
-    font-size: 1em;
-}
-
-.menu-w .main-menu li.active .icon-w .os-icon {
-    color: #ffffff;
-}

@@ -642,36 +642,11 @@
 }
 
 .side-logo img {
-    margin: 12px 4px 4px;
+    margin: 4px;
     max-height: 52px;
+    padding-top: 8px;
 }
 
 .side-logo {
     margin-top: 150px;
-}
-
-tr {
-    border-radius: 8px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-}
-
-.wider.auth-box-w .logo-w {
-    padding: 32px;
-}
-
-.wider.auth-box-w .auth-header {
-    margin-bottom: 8px;
-}
-
-.wider.auth-box-w .os-tabs-complex .nav-tabs .nav-item .tab-label {
-    font-size: 1em;
-}
-
-.wider.auth-box-w .os-tabs-w .os-tabs-complex .nav-tabs .nav-item .nav-link.active .tab-label {
-    font-size: 1em;
-}
-
-.menu-w .main-menu li.active .icon-w .os-icon {
-    color: #ffffff;
 }

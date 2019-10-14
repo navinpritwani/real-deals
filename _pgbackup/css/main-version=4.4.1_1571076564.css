@@ -319,6 +319,7 @@ input[type="month"] {
 textarea {
     overflow: auto;
     resize: vertical;
+    border-radius: 56px;
 }
 
 fieldset {
@@ -4327,7 +4328,7 @@ fieldset:disabled .all-wrapper a.fc-button,
 
 .btn-link {
     font-weight: 400;
-    color: #186ab0;
+    color: #047bf8;
     background-color: transparent;
 }
 
@@ -12025,7 +12026,7 @@ fieldset {
 legend {
     font-size: .99rem;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
     color: #047bf8;
 }
@@ -12036,7 +12037,6 @@ legend span {
     display: inline-block;
     z-index: 2;
     position: relative;
-    color: #186ab0;
 }
 
 legend:before {

@@ -274,7 +274,6 @@ textarea {
     font-family: inherit;
     font-size: inherit;
     line-height: inherit;
-    border-radius: 24px;
 }
 
 button,
@@ -3056,7 +3055,7 @@ pre code {
     background-color: #fff;
     background-clip: padding-box;
     border: 2px solid #dde2ec;
-    border-radius: 24px;
+    border-radius: 4px;
     -webkit-transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out,-webkit-box-shadow 0.15s ease-in-out;
     transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
@@ -3677,7 +3676,7 @@ fieldset:disabled .all-wrapper a.fc-button,
 .all-wrapper .fc-button.fc-state-active {
     color: #fff;
     background-color: #0e69b2;
-    border-color: #0e69b2;
+    border-color: #047bf8;
 }
 
 .btn-primary:hover,
@@ -3887,8 +3886,8 @@ fieldset:disabled .all-wrapper a.fc-button,
 
 .btn-danger {
     color: #fff;
-    background-color: #f6831f;
-    border-color: #f6831f;
+    background-color: #e65252;
+    border-color: #e65252;
 }
 
 .btn-danger:hover {
@@ -4327,7 +4326,7 @@ fieldset:disabled .all-wrapper a.fc-button,
 
 .btn-link {
     font-weight: 400;
-    color: #186ab0;
+    color: #047bf8;
     background-color: transparent;
 }
 
@@ -11360,7 +11359,7 @@ a.text-warning:focus {
 }
 
 .text-danger {
-    color: #f6831f !important;
+    color: #e65252 !important;
 }
 
 a.text-danger:hover,
@@ -11869,7 +11868,6 @@ a.text-dark:focus {
 
 label {
     margin-bottom: 4px;
-    margin-left: 12px;
 }
 
 button,
@@ -12025,7 +12023,7 @@ fieldset {
 legend {
     font-size: .99rem;
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     position: relative;
     color: #047bf8;
 }
@@ -12036,7 +12034,6 @@ legend span {
     display: inline-block;
     z-index: 2;
     position: relative;
-    color: #186ab0;
 }
 
 legend:before {
@@ -14842,7 +14839,7 @@ body.menu-side-right .layout-w {
 }
 
 .menu-w.color-scheme-dark {
-    background-color: #0e69b2;
+    background-color: #005cab;
     background-image: none;
     color: rgba(255,255,255,0.9);
     border-right-color: rgba(255,255,255,0.05);
@@ -15384,14 +15381,9 @@ body.menu-side-right .layout-w {
 }
 
 .menu-w.sub-menu-style-over.sub-menu-color-bright ul.main-menu>li.active>a {
-    color: #fff;
-    background: -webkit-linear-gradient(45deg, #303f9f, #7b1fa2);
-    background: -moz- oldlinear-gradient(45deg, #303f9f, #7b1fa2);
-    background: -o-linear-gradient(45deg, #303f9f, #7b1fa2);
-    background: linear-gradient(45deg, #124b83, #27191e);
-    -webkit-box-shadow: 3px 3px 20px 0 rgba(123, 31, 162, .5);
-    box-shadow: 3px 3px 20px 0 rgba(12, 12, 12, 0.47);
-    border-radius: 24px;
+    background-color: #ffffff;
+    border-radius: 40px;
+    box-shadow: 0px 3px rgba(0, 0, 0, 0.16);
 }
 
 .menu-w.menu-layout-mini {
@@ -18491,7 +18483,7 @@ a.el-tablo:hover .label {
 }
 
 .auth-box-w.wider {
-    max-width: 85%;
+    max-width: 500px;
 }
 
 .auth-box-w .logged-user-w {
