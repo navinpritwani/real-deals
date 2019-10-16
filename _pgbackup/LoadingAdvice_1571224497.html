@@ -231,7 +231,7 @@ END - Mobile Menu
             <!--------------------
 START - Main Menu
 -------------------->
-            <div class="sub-menu-color-bright menu-activated-on-hover menu-has-selected-link selected-menu-color-light color-scheme-dark menu-side-left menu-position-side sub-menu-style-over menu-w menu-layout-compact">
+            <div class="menu-w sub-menu-color-bright menu-activated-on-hover menu-has-selected-link sub-menu-style-over menu-side-left menu-position-side selected-menu-color-light color-scheme-dark menu-layout-compact">
                 <div class="text-center p-4">
                     <a class="logo" href="index.html"><div class="pt-4 pb-4 bg-white">
                             <img src="realdeals-logo.png"/>
@@ -244,12 +244,12 @@ START - Main Menu
                                 <div class="os-icon os-icon-layout os-icon-ui-55"></div>
                             </div><span>Dashboard</span></a>
                     </li>
-                    <li class="selected active">
-                        <a href="contract.html"><div class="icon-w">
-                                <div class="os-icon os-icon-layout os-icon-documents-03 text-white"></div>
+                    <li class="selected">
+                        <a href="index.html"><div class="icon-w">
+                                <div class="os-icon os-icon-layout os-icon-documents-03"></div>
                             </div><span>Contracts</span></a>
                     </li>
-                    <li class="selected">
+                    <li class="selected active">
                         <a href="LoadingAdvice.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
@@ -277,8 +277,8 @@ START - Main Menu
                     <h6 class="text-white text-left">Powered By</h6>
                     <img style="max-height: 40px; margin-top: 12px;" src="../real-ispat%20CRM/real-logo.png"/>
                     <br>
-                    <img src="../real-ispat%20CRM/GK%20TMT.jpg" style="max-height: 48px;" class="mr-2"/>
-                    <img src="real-wire@3x.png"/>
+                    <img src="../real-ispat%20CRM/GK%20TMT.jpg" style="max-height: 48px;"/>
+                    <img src="real-wire@3x.png" class="ml-2"/>
                 </div>
             </div>
             <!--------------------
@@ -423,141 +423,75 @@ START - Breadcrumbs
                         <a href="index.html">Customer Portal</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <span>Contracts</span>
+                        <span>Loading Advice</span>
                     </li>
                 </ul>
                 <!--------------------
 END - Breadcrumbs
 -------------------->
-                <div class="content-i" style="height: 100vh;">
+                <div class="content-i" style="height: 90vh;">
                     <div class="content-box">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header">Contract</h6>
+                                    <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> Create new Advice</button>
+                                    <h6 class="element-header">Loading Advices</h6>
                                     <div class="element-box">
-                                        <h5 class="form-header">Contract No. DL-1234</h5>
-                                        <h6>Contract Details</h6>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>GST tax amount : 
-                                                        <strong>Rs. 1200</strong>
-                                                    </li>
-                                                    <li>Rate per ton: 
-                                                        <strong>Rs. 2200</strong>
-                                                    </li>
-                                                    <li>Payment Terms: 
-                                                        <strong>Next day payment</strong>
-                                                    </li>
-                                                    <li>Brokerage / Commision Rate : 
-                                                        <strong>Rs. 110</strong>
-                                                    </li>
-                                                    <li>Discount per Ton : 
-                                                        <strong>Rs. 11</strong>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <ul>
-                                                    <li>Item Category: 
-                                                        <strong>GI Wire</strong>
-                                                    </li>
-                                                    <li>Total Quantity : 
-                                                        <strong>300 Ton</strong>
-                                                    </li>
-                                                    <li>Tolerance : 
-                                                        <strong>1 Ton</strong>
-                                                    </li>
-                                                    <li>Remark: 
-                                                        <strong>Prefered plant - API Ispat</strong>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-6">
-                                                <h6>Buyer Details</h6>
-                                                <ul>
-                                                    <li>Buyer Name : 
-                                                        <strong>RK Steels</strong>
-                                                    </li>
-                                                    <li>Buyer Address : 
-                                                        <strong>Sarona</strong>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-md-6">
-                                                <h6>Consignee Details</h6>
-                                                <ul>
-                                                    <li>Consignee Name : 
-                                                        <strong>RK Steels</strong>
-                                                    </li>
-                                                    <li>Consignee Address : 
-                                                        <strong>Sarona</strong>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-md-12">
-                                                <h6>Loading Advices</h6>
-                                                <div class="table-responsive">
-                                                    <!--------------------
+                                        <h5 class="form-header">List of Loading Advice</h5>
+                                        <div class="table-responsive">
+                                            <!--------------------
 START - Basic Table
 -------------------->
-                                                    <table class="table table-padded bg-light pl-2 pr-2">
-                                                        <thead>
-                                                            <tr>
-                                                                <th>ID</th>
-                                                                <th>Dispatch Date</th>
-                                                                <th>Contract</th>
-                                                                <th class="text-center">Quantity</th>
-                                                                <th class="text-right">Vehicle No.</th>
-                                                                <th class="text-right">Status</th>
-                                                            </tr>
-                                                        </thead>
-                                                        <tbody>
-                                                            <tr>
-                                                                <td>DL-1234</td>
-                                                                <td>12/6/19</td>
-                                                                <td>
+                                            <table class="table table-padded bg-light pl-2 pr-2">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Dispatch Date</th>
+                                                        <th>Contract</th>
+                                                        <th class="text-center">Quantity</th>
+                                                        <th class="text-right">Vehicle No.</th>
+                                                        <th class="text-right">Status</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>DL-1234</td>
+                                                        <td>12/6/19</td>
+                                                        <td>
     DL-1234</td>
-                                                                <td class="text-center">25 Ton </td>
-                                                                <td class="text-right">CG04MU6544</td>
-                                                                <td class="text-right">
-                                                                    <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                         Loading
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>DL-1234</td>
-                                                                <td>12/6/19</td>
-                                                                <td>
+                                                        <td class="text-center">25 Ton </td>
+                                                        <td class="text-right">CG04MU6544</td>
+                                                        <td class="text-right">
+                                                            <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                                                                                                                                                     Loading
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-1234</td>
+                                                        <td>12/6/19</td>
+                                                        <td>
     DL-1234</td>
-                                                                <td class="text-center">25 Ton </td>
-                                                                <td class="text-right">CG04MU6544</td>
-                                                                <td class="text-right">
-                                                                    <div class="status-pill red" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                             Pending
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <td>DL-1234</td>
-                                                                <td>12/6/19</td>
-                                                                <td>
+                                                        <td class="text-center">25 Ton </td>
+                                                        <td class="text-right">CG04MU6544</td>
+                                                        <td class="text-right">
+                                                            <div class="status-pill red" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                                                                                                                                                         Pending
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-1234</td>
+                                                        <td>12/6/19</td>
+                                                        <td>
     DL-1234</td>
-                                                                <td class="text-center">25 Ton </td>
-                                                                <td class="text-right">CG04MU6544</td>
-                                                                <td class="text-right">
-                                                                    <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                         Loading
-                                                                </td>
-                                                            </tr>
-                                                        </tbody>
-                                                    </table>
-                                                    <!--------------------
+                                                        <td class="text-center">25 Ton </td>
+                                                        <td class="text-right">CG04MU6544</td>
+                                                        <td class="text-right">
+                                                            <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                                                                                                                                                     Loading
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <!--------------------
 END - Basic Table
 -------------------->
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>
