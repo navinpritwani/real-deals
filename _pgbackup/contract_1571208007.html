@@ -117,8 +117,8 @@
             <!--------------------
 START - Mobile Menu
 -------------------->
-            <div class="menu-activated-on-click menu-mobile">
-                <div class="mm-logo-buttons-w">
+            <div class="menu-activated-on-click menu-mobile color-scheme-dark">
+                <div class="mm-logo-buttons-w bg-white">
                     <a class="mm-logo" href="index.html"><img src="realdeals-logo.png"><span>Clean Admin</span></a>
                     <div class="mm-buttons">
                         <div class="content-panel-open">
@@ -231,7 +231,7 @@ END - Mobile Menu
             <!--------------------
 START - Main Menu
 -------------------->
-            <div class="menu-w sub-menu-color-bright menu-activated-on-hover menu-has-selected-link sub-menu-style-over menu-side-left menu-position-side selected-menu-color-light color-scheme-dark menu-layout-compact">
+            <div class="sub-menu-color-bright menu-activated-on-hover menu-has-selected-link selected-menu-color-light color-scheme-dark menu-side-left menu-position-side menu-w sub-menu-style-over">
                 <div class="text-center p-4">
                     <a class="logo" href="index.html"><div class="pt-4 pb-4 bg-white">
                             <img src="realdeals-logo.png"/>
@@ -244,12 +244,12 @@ START - Main Menu
                                 <div class="os-icon os-icon-layout os-icon-ui-55"></div>
                             </div><span>Dashboard</span></a>
                     </li>
-                    <li class="selected">
+                    <li class="selected active">
                         <a href="index.html"><div class="icon-w">
-                                <div class="os-icon os-icon-layout os-icon-documents-03"></div>
+                                <div class="os-icon os-icon-layout os-icon-documents-03 text-white"></div>
                             </div><span>Contracts</span></a>
                     </li>
-                    <li class="selected active">
+                    <li class="selected">
                         <a href="LoadingAdvice.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
@@ -277,8 +277,8 @@ START - Main Menu
                     <h6 class="text-white text-left">Powered By</h6>
                     <img style="max-height: 40px; margin-top: 12px;" src="../real-ispat%20CRM/real-logo.png"/>
                     <br>
-                    <img src="../real-ispat%20CRM/GK%20TMT.jpg" style="max-height: 48px;"/>
-                    <img src="real-wire@3x.png" class="ml-2"/>
+                    <img src="../real-ispat%20CRM/GK%20TMT.jpg" style="max-height: 48px;" class="mr-2"/>
+                    <img src="real-wire@3x.png"/>
                 </div>
             </div>
             <!--------------------
@@ -392,6 +392,9 @@ START - User avatar and menu in secondary top menu
                                             <a href="users_profile_small.html"><i class="os-icon os-icon-coins-4"></i><span>Billing Details</span></a>
                                         </li>
                                         <li>
+                                            <a href="#"><i class="os-icon os-icon-others-43"></i><span>Notifications</span></a>
+                                        </li>
+                                        <li>
                                             <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
                                         </li>
                                     </ul>
@@ -420,7 +423,7 @@ START - Breadcrumbs
                         <a href="index.html">Customer Portal</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <span>Loading Advice</span>
+                        <span>Contracts</span>
                     </li>
                 </ul>
                 <!--------------------
@@ -431,206 +434,62 @@ END - Breadcrumbs
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header">Loading Advice</h6>
+                                    <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> Create new contract</button>
+                                    <h6 class="element-header">Contracts</h6>
                                     <div class="element-box">
-                                        <h5 class="form-header">Create new Loading Advice</h5>
-                                        <fieldset class="form-group">
-                                            <legend>
-                                                <span>Dispatch Details </span>
-                                            </legend>
-                                            <div class="row">
-                                                <div class="col-3">
-                                                    <div class="form-group">
-                                                        <label for=""> Disptach date</label>
-                                                        <div class="date-input">
-                                                            <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/1978">
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-3">
-                                                    <div class="form-group">
-                                                        <label for=""> Payment Term</label>
-                                                        <select class="form-control">
-                                                            <option>Select payment term</option>
-                                                            <option>New York</option>
-                                                            <option>California</option>
-                                                            <option>Boston</option>
-                                                            <option>Texas</option>
-                                                            <option>Colorado</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col-5">
-                                                    <div class="form-group">
-                                                        <button class="btn float-right mb-1 btn-link" type="submit"> Add new Buyer</button>
-                                                        <label for=""> Buyer Detail</label>
-                                                        <select class="form-control">
-                                                            <option>Select Buyer</option>
-                                                            <option>New York</option>
-                                                            <option>California</option>
-                                                            <option>Boston</option>
-                                                            <option>Texas</option>
-                                                            <option>Colorado</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-5">
-                                                    <div class="form-group">
-                                                        <button class="btn float-right mb-1 btn-link" type="submit"> Add new Consignee</button>
-                                                        <label for="">Consignee Detail</label>
-                                                        <select class="form-control">
-                                                            <option>Select Consignee</option>
-                                                            <option>New York</option>
-                                                            <option>California</option>
-                                                            <option>Boston</option>
-                                                            <option>Texas</option>
-                                                            <option>Colorado</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset class="form-group">
-                                            <legend>
-                                                <span>Lorry Details </span>
-                                            </legend>
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <button class="btn float-right mb-1 btn-link" type="submit"> Add new Transporter</button>
-                                                        <label for=""> Transporter Name</label>
-                                                        <select class="form-control">
-                                                            <option>Select Transporter</option>
-                                                            <option>New York</option>
-                                                            <option>California</option>
-                                                            <option>Boston</option>
-                                                            <option>Texas</option>
-                                                            <option>Colorado</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for=""> Driver Name</label>
-                                                        <input class="form-control" placeholder="Enter Driver Name" type="password">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for=""> Vehicle No.</label>
-                                                        <input class="form-control" placeholder="Enter vehicle no." type="password">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="">Driver's License no.</label>
-                                                        <input class="form-control" placeholder="Enter License no." type="password">
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="">Driver's Contact No.</label>
-                                                        <input class="form-control" placeholder="Enter contact no." type="password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <fieldset class="form-group">
-                                            <legend>
-                                                <span>Item Details </span>
-                                            </legend>
-                                            <div class="row">
-</div>
-                                            <div class="table-responsive">
-                                                <!--------------------
-START - Basic Table
--------------------->
-                                                <table class="table table-lightborder">
-                                                    <thead>
-                                                        <tr>
-                                                            <th>Contract</th>
-                                                            <th>Item</th>
-                                                            <th>Quantity</th>
-                                                            <th class="text-center">Rate</th>
-                                                            <th class="text-right">Discount</th>
-                                                            <th class="text-right">Total Amouunt</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <select class="form-control">
-                                                                    <option>Select Contact</option>
-                                                                    <option>New York</option>
-                                                                    <option>California</option>
-                                                                    <option>Boston</option>
-                                                                    <option>Texas</option>
-                                                                    <option>Colorado</option>
-                                                                </select>                                                                 
-                                                            </td>
-                                                            <td>
-                                                                <select class="form-control">
-                                                                    <option>Select Item</option>
-                                                                    <option>New York</option>
-                                                                    <option>California</option>
-                                                                    <option>Boston</option>
-                                                                    <option>Texas</option>
-                                                                    <option>Colorado</option>
-                                                                </select>                                                                 
-                                                            </td>
-                                                            <td>
-                                                                <input placeholder="Enter Quantity" type="number" class="form-control">
-                                                            </td>
-                                                            <td class="text-center">--</td>
-                                                            <td class="text-right">--</td>
-                                                            <td class="text-right">
-                                                                            --</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <select class="form-control">
-                                                                    <option>Select Contact</option>
-                                                                    <option>New York</option>
-                                                                    <option>California</option>
-                                                                    <option>Boston</option>
-                                                                    <option>Texas</option>
-                                                                    <option>Colorado</option>
-                                                                </select>                                                                 
-                                                            </td>
-                                                            <td>
-                                                                <select class="form-control">
-                                                                    <option>Select Item</option>
-                                                                    <option>New York</option>
-                                                                    <option>California</option>
-                                                                    <option>Boston</option>
-                                                                    <option>Texas</option>
-                                                                    <option>Colorado</option>
-                                                                </select>                                                                 
-                                                            </td>
-                                                            <td>
-                                                                <input placeholder="Enter Quantity" type="number" class="form-control">
-                                                            </td>
-                                                            <td class="text-center">--</td>
-                                                            <td class="text-right">--</td>
-                                                            <td class="text-right">
-                                                                            --</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                                <!--------------------
-END - Basic Table
--------------------->
-                                            </div>
-                                            <div class="controls-below-table">
-                                                <div class="font-weight-bold">
-                                                    <button class="btn float-right mb-1 btn-link" type="submit"> Add new Item</button>
-                                                </div>
-                                            </div>
-                                        </fieldset>
-                                        <div class="form-buttons-w text-right">
-                                            <button class="btn btn-primary" type="submit"> Submit</button>
+                                        <h5 class="form-header">List of Contracts</h5>
+                                        <div class="table-responsive">
+                                            <table class="table table-padded bg-light pl-2 pr-2">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Date</th>
+                                                        <th>Item Category</th>
+                                                        <th>Quantiy</th>
+                                                        <th>Total Amount</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Pending</a></td>
+                                                        <td><a class="btn btn-sm btn-primary" href="#">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Pending</a></td>
+                                                        <td><a class="btn btn-sm btn-primary" href="#">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Pending</a></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-success"><a class="btn btn-sm btn-success" href="#">Approved</a></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>

@@ -3109,7 +3109,7 @@ select.form-control:not([multiple]) {
     -moz-appearance: none;
     background-position: right 50%;
     background-repeat: no-repeat;
-    background-image: data;
+    background-image: data:;
     padding: 0.5em;
     padding-right: 1.5em;
     height: calc(2.1rem + 4px);

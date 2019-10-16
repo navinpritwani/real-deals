@@ -3103,17 +3103,8 @@ pre code {
     opacity: 1;
 }
 
-select.form-control:not([multiple]) {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-position: right 50%;
-    background-repeat: no-repeat;
-    background-image: data;
-    padding: 0.5em;
-    padding-right: 1.5em;
+select.form-control:not([size]):not([multiple]) {
     height: calc(2.1rem + 4px);
-    border-radius: 24px !important;
 }
 
 select.form-control:focus::-ms-value {
@@ -17083,8 +17074,11 @@ body.menu-side-right .layout-w {
 }
 
 .menu-mobile.color-scheme-dark {
-    background: #0e69b2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4D75), to(#31395B));
+    background-image: linear-gradient(to bottom, #3D4D75 0%, #31395B 100%);
     background-repeat: repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1c4cc3), to(#1c2e7b));
+    background-image: linear-gradient(to bottom, #1c4cc3 0%, #1c2e7b 100%);
     background-repeat: repeat-x;
     color: rgba(255,255,255,0.9);
 }

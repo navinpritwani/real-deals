@@ -3103,13 +3103,13 @@ pre code {
     opacity: 1;
 }
 
-select.form-control:not([multiple]) {
+select.form-control:not([size]):not([multiple]) {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
     background-position: right 50%;
     background-repeat: no-repeat;
-    background-image: data;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAMCAYAAABSgIzaAAAAGXRFW…zTk0D/M+KzkRGPoQSdykiKJrBGpOhgJFYTWNEIiEeAAAMAzNENEOH+do8AAAAASUVORK5CYII=);
     padding: 0.5em;
     padding-right: 1.5em;
     height: calc(2.1rem + 4px);
@@ -17083,8 +17083,11 @@ body.menu-side-right .layout-w {
 }
 
 .menu-mobile.color-scheme-dark {
-    background: #0e69b2;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#3D4D75), to(#31395B));
+    background-image: linear-gradient(to bottom, #3D4D75 0%, #31395B 100%);
     background-repeat: repeat-x;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#1c4cc3), to(#1c2e7b));
+    background-image: linear-gradient(to bottom, #1c4cc3 0%, #1c2e7b 100%);
     background-repeat: repeat-x;
     color: rgba(255,255,255,0.9);
 }
