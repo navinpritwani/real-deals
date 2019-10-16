@@ -13045,7 +13045,7 @@ body .daterangepicker {
     font-family: "Avenir Next W01","Proxima Nova W01","Rubik",-apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
     border: none;
     padding: 15px;
-    min-width: 540px;
+    min-width: 295px;
 }
 
 body .daterangepicker::after {
