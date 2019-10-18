@@ -231,9 +231,9 @@ END - Mobile Menu
             <!--------------------
 START - Main Menu
 -------------------->
-            <div class="menu-w sub-menu-color-bright menu-activated-on-hover menu-has-selected-link color-style-transparent color-scheme-light sub-menu-style-over menu-layout-compact menu-side-left menu-position-side selected-menu-color-light">
+            <div class="menu-w sub-menu-color-bright menu-activated-on-hover menu-has-selected-link sub-menu-style-over menu-layout-compact menu-side-left menu-position-side selected-menu-color-light color-scheme-dark">
                 <div class="text-center p-4">
-                    <a class="logo" href="index.html"><div>
+                    <a class="logo" href="index.html"><div class="pt-4 pb-4 bg-white">
                             <img src="realdeals-logo.png"/>
                         </div></a>
                 </div>
@@ -241,33 +241,45 @@ START - Main Menu
                 <ul class="main-menu">
                     <li class="selected">
                         <a href="index.html"><div class="icon-w">
-                                <div class="os-icon os-icon-layout"></div>
+                                <div class="os-icon os-icon-layout os-icon-ui-55"></div>
                             </div><span>Dashboard</span></a>
                     </li>
-                    <li class="selected active">
-                        <a href="customers.html"><div class="icon-w">
-                                <div class="os-icon os-icon-layout"></div>
-                            </div><span>Customers</span></a>
-                    </li>
                     <li class="selected">
-                        <a href="contract-sales.html"><div class="icon-w">
-                                <div class="os-icon os-icon-layout"></div>
+                        <a href="contract.html"><div class="icon-w">
+                                <div class="os-icon os-icon-layout os-icon-documents-03"></div>
                             </div><span>Contracts</span></a>
                     </li>
                     <li class="selected">
-                        <a href="complaints.html"><div class="icon-w">
-                                <div class="os-icon os-icon-layout"></div>
+                        <a href="LoadingAdvice.html"><div class="icon-w">
+                                <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
+                            </div><span>Loading Advice</span></a>
+                    </li>
+                    <li class="selected active">
+                        <a href="customers.html"><div class="icon-w">
+                                <div class="os-icon-layout os-icon os-icon-phone-21"></div>
+                            </div><span>Customers</span></a>
+                    </li>
+                    <li class="selected">
+                        <a href="ForwardAuction.html"><div class="icon-w">
+                                <div class="os-icon os-icon-layout os-icon-coins-4"></div>
                             </div><span>Tour Planing</span></a>
                     </li>
                     <li class="sub-header">
                         <span></span>
                     </li>
                     <li>
-                        <a href="support.html"><div class="icon-w">
-                                <div class="os-icon os-icon-zap"></div>
+                        <a href="#"><div class="icon-w">
+                                <div class="os-icon os-icon-mail-07"></div>
                             </div><span>Support</span></a>
                     </li>
                 </ul>
+                <div class="side-logo pl-5">
+                    <h6 class="text-white text-left">Powered By</h6>
+                    <img style="max-height: 40px; margin-top: 12px;" src="real-logo.png"/>
+                    <br>
+                    <img src="GK%20TMT.jpg" style="max-height: 48px;"/>
+                    <img src="real-wire@3x.png" class="ml-2"/>
+                </div>
             </div>
             <!--------------------
 END - Main Menu
@@ -394,20 +406,20 @@ END - Breadcrumbs
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
                                     <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> Create new Customer</button>
-                                    <h6 class="element-header">Customers</h6>
+                                    <h6 class="element-header" style="max-width: 70%;">Customers</h6>
                                     <div class="element-box">
                                         <h5 class="form-header">List of Customers</h5>
                                         <div class="table-responsive">
-                                            <table class="table table-lightborder table-lightfont table-striped">
+                                            <table class="table table-padded bg-light pl-2 pr-2">
                                                 <thead>
                                                     <tr>
-                                                        <th>Customer ID</th>
-                                                        <th>Customer Name</th>
-                                                        <th>Cutomer Type</th>
+                                                        <th>ID</th>
+                                                        <th>Name</th>
+                                                        <th>Type</th>
                                                         <th>City</th>
                                                         <th>GSTIN</th>
                                                         <th>Status</th>
-                                                        <th>Action</th>
+                                                        <th>Target</th>
                                                     </tr>
                                                 </thead>
                                                 <tbody>
@@ -418,7 +430,7 @@ END - Breadcrumbs
                                                         <td>Raipur</td>
                                                         <td>CJKPP123456</td>
                                                         <td style="color: #06a433;">ACTIVE</td>
-                                                        <td><a class="btn btn-sm" href="contract-single.html">View</a></td>
+                                                        <td>80 / 100 Ton</td>
                                                     </tr>
                                                     <tr>
                                                         <td>CI-23144</td>
@@ -427,7 +439,7 @@ END - Breadcrumbs
                                                         <td>Raipur</td>
                                                         <td>CJKPP123456</td>
                                                         <td style="color: #06a433;">ACTIVE</td>
-                                                        <td><a class="btn btn-sm" href="contract-single.html">View</a></td>
+                                                        <td>80 / 100 Ton</td>
                                                     </tr>
                                                     <tr>
                                                         <td>CI-23144</td>
@@ -436,7 +448,7 @@ END - Breadcrumbs
                                                         <td>Raipur</td>
                                                         <td>CJKPP123456</td>
                                                         <td style="color: #06a433;">ACTIVE</td>
-                                                        <td><a class="btn btn-sm" href="contract-single.html">View</a></td>
+                                                        <td>80 / 100 Ton</td>
                                                     </tr>
                                                     <tr>
                                                         <td>CI-23144</td>
@@ -445,7 +457,7 @@ END - Breadcrumbs
                                                         <td>Raipur</td>
                                                         <td>CJKPP123456</td>
                                                         <td style="color: #06a433;">ACTIVE</td>
-                                                        <td><a class="btn btn-sm" href="contract-single.html">View</a></td>
+                                                        <td>80 / 100 Ton</td>
                                                     </tr>
                                                 </tbody>
                                             </table>

@@ -886,6 +886,11 @@ $(function () {
     });
   }
 
+    document.getElementById('addBuyer').addEventListener('click', function(){
+      $('#addBuyerModal').modal('show');
+      console.log("addbuyermodal");
+    })
+
   // #22. Colors Toggler
 
   $('.floated-colors-btn').on('click', function () {

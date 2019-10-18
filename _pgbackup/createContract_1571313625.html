@@ -22,55 +22,73 @@
     </head>
     <body class="menu-position-side menu-side-left full-screen with-content-panel">
         <div class="all-wrapper with-side-panel solid-bg-all">
-            <div aria-hidden="true" class="onboarding-modal modal fade animated" role="dialog" tabindex="-1" id="addBuyerModal">
+            <div aria-hidden="true" class="onboarding-modal modal fade animated" role="dialog" tabindex="-1">
                 <div class="modal-dialog modal-centered" role="document">
                     <div class="modal-content text-center">
                         <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                            <span class="close-label">Skip Intro</span>
                             <span class="os-icon os-icon-close"></span>
                         </button>
                         <div class="onboarding-slider-w">
                             <div class="onboarding-slide">
+                                <div class="onboarding-media">
+                                    <img alt="" src="img/bigicon2.png" width="200px">
+                                </div>
                                 <div class="onboarding-content with-gradient">
-                                    <h4 class="onboarding-title text-left">Add new Buyer</h4>
-                                    <div class="form-row text-left">
-                                        <div class="form-group col-6">
-                                            <label for=""> GSTIN</label>
-                                            <input class="form-control" placeholder="Enter gst number" type="text">
+                                    <h4 class="onboarding-title">Example of onboarding screen!</h4>
+                                    <div class="onboarding-text">This is an example of a multistep onboarding screen, you can use it to introduce your customers to your app, or collect additional information from them before they start using your app.</div>
+                                </div>
+                            </div>
+                            <div class="onboarding-slide">
+                                <div class="onboarding-media">
+                                    <img alt="" src="img/bigicon5.png" width="200px">
+                                </div>
+                                <div class="onboarding-content with-gradient">
+                                    <h4 class="onboarding-title">Example Request Information</h4>
+                                    <div class="onboarding-text">In this example you can see a form where you can request some additional information from the customer when they land on the app page.</div>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="">Your Full Name</label>
+                                                    <input class="form-control" placeholder="Enter your full name..." type="text" value="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <div class="form-group">
+                                                    <label for="">Your Role</label>
+                                                    <select class="form-control">
+                                                        <option>Web Developer</option>
+                                                        <option>Business Owner</option>
+                                                        <option>Other</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Firm Name</label>
-                                            <input class="form-control" placeholder="Enter firm name" type="text">
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="onboarding-slide">
+                                <div class="onboarding-media">
+                                    <img alt="" src="img/bigicon6.png" width="200px">
+                                </div>
+                                <div class="onboarding-content with-gradient">
+                                    <h4 class="onboarding-title">Showcase App Features</h4>
+                                    <div class="onboarding-text">In this example you can showcase some of the features of your application, it is very handy to make new users aware of your hidden features. You can use boostrap columns to split them up.</div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <ul class="features-list">
+                                                <li>Fully Responsive design</li>
+                                                <li>Pre-built app layouts</li>
+                                                <li>Incredible Flexibility</li>
+                                            </ul>
                                         </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Name on cheque</label>
-                                            <input class="form-control" placeholder="Enter name writen on cheque" type="text">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Mobile number </label>
-                                            <input class="form-control" placeholder="Enter firm phone number" type="text">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Email</label>
-                                            <input class="form-control" placeholder="Enter firm email id" type="email">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for=""> Full Address</label>
-                                            <input class="form-control" placeholder="Enter full address" type="text">
-                                        </div>
-                                        <div class="form-group col-4">
-                                            <label for=""> City</label>
-                                            <input class="form-control" placeholder="Enter city" type="text">
-                                        </div>
-                                        <div class="form-group col-4">
-                                            <label for=""> District</label>
-                                            <input class="form-control" placeholder="Enter district" type="text">
-                                        </div>
-                                        <div class="form-group col-3 col-4">
-                                            <label for=""> State</label>
-                                            <input class="form-control" placeholder="Enter state" type="text">
-                                        </div>
-                                        <div class="buttons-w float-right">
-                                            <a class="btn btn-primary" href="customers.html">Submit</a>
+                                        <div class="col-sm-6">
+                                            <ul class="features-list">
+                                                <li>Boxed & Full Layouts</li>
+                                                <li>Based on Bootstrap 4</li>
+                                                <li>Developer Friendly     </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
@@ -440,7 +458,7 @@ END - Breadcrumbs
                                                 <input class="form-control" rows="3">
                                             </div>
                                             <div class="form-group col-4">
-                                                <button class="btn float-right mb-1 btn-link" type="submit" id="addBuyer"> Add new Buyer</button>
+                                                <button class="btn float-right mb-1 btn-link" type="submit"> Add new Buyer</button>
                                                 <label for=""> Buyer Detail</label>
                                                 <select class="form-control">
                                                     <option>Select Buyer</option>

@@ -22,59 +22,92 @@
     </head>
     <body class="menu-position-side menu-side-left full-screen with-content-panel">
         <div class="all-wrapper with-side-panel solid-bg-all">
-            <div aria-hidden="true" class="onboarding-modal modal fade animated" role="dialog" tabindex="-1" id="addBuyerModal">
-                <div class="modal-dialog modal-centered" role="document">
-                    <div class="modal-content text-center">
-                        <button aria-label="Close" class="close" data-dismiss="modal" type="button">
-                            <span class="os-icon os-icon-close"></span>
-                        </button>
-                        <div class="onboarding-slider-w">
-                            <div class="onboarding-slide">
-                                <div class="onboarding-content with-gradient">
-                                    <h4 class="onboarding-title text-left">Add new Buyer</h4>
-                                    <div class="form-row text-left">
-                                        <div class="form-group col-6">
-                                            <label for=""> GSTIN</label>
-                                            <input class="form-control" placeholder="Enter gst number" type="text">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Firm Name</label>
-                                            <input class="form-control" placeholder="Enter firm name" type="text">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Name on cheque</label>
-                                            <input class="form-control" placeholder="Enter name writen on cheque" type="text">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Mobile number </label>
-                                            <input class="form-control" placeholder="Enter firm phone number" type="text">
-                                        </div>
-                                        <div class="form-group col-6">
-                                            <label for=""> Email</label>
-                                            <input class="form-control" placeholder="Enter firm email id" type="email">
-                                        </div>
-                                        <div class="form-group col-12">
-                                            <label for=""> Full Address</label>
-                                            <input class="form-control" placeholder="Enter full address" type="text">
-                                        </div>
-                                        <div class="form-group col-4">
-                                            <label for=""> City</label>
-                                            <input class="form-control" placeholder="Enter city" type="text">
-                                        </div>
-                                        <div class="form-group col-4">
-                                            <label for=""> District</label>
-                                            <input class="form-control" placeholder="Enter district" type="text">
-                                        </div>
-                                        <div class="form-group col-3 col-4">
-                                            <label for=""> State</label>
-                                            <input class="form-control" placeholder="Enter state" type="text">
-                                        </div>
-                                        <div class="buttons-w float-right">
-                                            <a class="btn btn-primary" href="customers.html">Submit</a>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="search-with-suggestions-w">
+                <div class="search-with-suggestions-modal">
+                    <div class="element-search">
+                        <input class="search-suggest-input" placeholder="Start typing to search..." type="text">
+                        <div class="close-search-suggestions">
+                            <i class="os-icon os-icon-x"></i>
+                        </div>
+                    </input>
+                </div>
+                <div class="search-suggestions-group">
+                    <div class="ssg-header">
+                        <div class="ssg-icon">
+                            <div class="os-icon os-icon-box"></div>
+                        </div>
+                        <div class="ssg-name">Projects</div>
+                        <div class="ssg-info">24 Total</div>
+                    </div>
+                    <div class="ssg-content">
+                        <div class="ssg-items ssg-items-boxed">
+                            <a class="ssg-item" href="users_profile_big.html"><div class="item-media" style="background-image: url('img/company6.png')"></div><div class="item-name">Integ
+                                    <span>ration</span> with API
+                                </div></a>
+                            <a class="ssg-item" href="users_profile_big.html"><div class="item-media" style="background-image: url('img/company7.png')"></div><div class="item-name">Deve
+                                    <span>lopm</span>ent Project
+                                </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-suggestions-group">
+                    <div class="ssg-header">
+                        <div class="ssg-icon">
+                            <div class="os-icon os-icon-users"></div>
+                        </div>
+                        <div class="ssg-name">Customers</div>
+                        <div class="ssg-info">12 Total</div>
+                    </div>
+                    <div class="ssg-content">
+                        <div class="ssg-items ssg-items-list">
+                            <a class="ssg-item" href="users_profile_big.html"><div class="item-media" style="background-image: url('img/avatar1.jpg')"></div><div class="item-name">John Ma
+                                    <span>yer</span>s
+                                </div></a>
+                            <a class="ssg-item" href="users_profile_big.html"><div class="item-media" style="background-image: url('img/avatar2.jpg')"></div><div class="item-name">Th
+                                    <span>omas</span> Mullier
+                                </div></a>
+                            <a class="ssg-item" href="users_profile_big.html"><div class="item-media" style="background-image: url('img/avatar3.jpg')"></div><div class="item-name">Kim C
+                                    <span>olli</span>ns
+                                </div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="search-suggestions-group">
+                    <div class="ssg-header">
+                        <div class="ssg-icon">
+                            <div class="os-icon os-icon-folder"></div>
+                        </div>
+                        <div class="ssg-name">Files</div>
+                        <div class="ssg-info">17 Total</div>
+                    </div>
+                    <div class="ssg-content">
+                        <div class="ssg-items ssg-items-blocks">
+                            <a class="ssg-item" href="#"><div class="item-icon">
+                                    <i class="os-icon os-icon-file-text"></i>
+                                </div><div class="item-name">Work
+                                    <span>Not</span>e.txt
+                                </div></a>
+                            <a class="ssg-item" href="#"><div class="item-icon">
+                                    <i class="os-icon os-icon-film"></i>
+                                </div><div class="item-name">V
+                                    <span>ideo</span>.avi
+                                </div></a>
+                            <a class="ssg-item" href="#"><div class="item-icon">
+                                    <i class="os-icon os-icon-database"></i>
+                                </div><div class="item-name">User
+                                    <span>Tabl</span>e.sql
+                                </div></a>
+                            <a class="ssg-item" href="#"><div class="item-icon">
+                                    <i class="os-icon os-icon-image"></i>
+                                </div><div class="item-name">wed
+                                    <span>din</span>g.jpg
+                                </div></a>
+                        </div>
+                        <div class="ssg-nothing-found">
+                            <div class="icon-w">
+                                <i class="os-icon os-icon-eye-off"></i>
                             </div>
+                            <span>No files were found. Try changing your query...</span>
                         </div>
                     </div>
                 </div>
@@ -84,8 +117,8 @@
             <!--------------------
 START - Mobile Menu
 -------------------->
-            <div class="menu-activated-on-click menu-mobile">
-                <div class="mm-logo-buttons-w">
+            <div class="menu-mobile color-scheme-dark menu-activated-on-click">
+                <div class="mm-logo-buttons-w bg-white">
                     <a class="mm-logo" href="index.html"><img src="realdeals-logo.png"><span>Clean Admin</span></a>
                     <div class="mm-buttons">
                         <div class="content-panel-open">
@@ -103,37 +136,36 @@ START - Mobile Menu List
                     <ul class="main-menu">
                         <li>
                             <a href="index.html"><div class="icon-w">
-                                    <div class="os-icon os-icon-layout"></div>
+                                    <div class="os-icon os-icon-layout os-icon-ui-55"></div>
+                                </div><span>Dashboard</span></a>
+                        </li>
+                        <li class="active selected">
+                            <a href="index.html"><div class="icon-w">
+                                    <div class="os-icon os-icon-layout os-icon-documents-03"></div>
                                 </div><span>Dashboard</span></a>
                         </li>
                         <li>
                             <a href="index.html"><div class="icon-w">
-                                    <div class="os-icon os-icon-layout"></div>
+                                    <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                                 </div><span>Dashboard</span></a>
                         </li>
                         <li>
                             <a href="index.html"><div class="icon-w">
-                                    <div class="os-icon os-icon-layout"></div>
+                                    <div class="os-icon os-icon-layout os-icon-phone-21"></div>
                                 </div><span>Dashboard</span></a>
                         </li>
                         <li>
                             <a href="index.html"><div class="icon-w">
-                                    <div class="os-icon os-icon-layout"></div>
+                                    <div class="os-icon os-icon-layout os-icon-coins-4"></div>
                                 </div><span>Dashboard</span></a>
                         </li>
                         <li>
                             <a href="index.html"><div class="icon-w">
-                                    <div class="os-icon os-icon-layout"></div>
-                                </div><span>Dashboard</span></a>
-                        </li>
-                        <li>
-                            <a href="index.html"><div class="icon-w">
-                                    <div class="os-icon os-icon-layout"></div>
-                                </div><span>Dashboard</span></a>
+</div><span>Dashboard</span></a>
                         </li>
                         <li>
                             <a href="#"><div class="icon-w">
-                                    <div class="os-icon os-icon-zap"></div>
+                                    <div class="os-icon os-icon-zap os-icon-mail-07"></div>
                                 </div><span>Icons</span></a>
                             <ul class="sub-menu">
                                 <li>
@@ -212,7 +244,7 @@ START - Main Menu
                             </div><span>Dashboard</span></a>
                     </li>
                     <li class="selected active">
-                        <a href="index.html"><div class="icon-w">
+                        <a href="contract.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-documents-03 text-white"></div>
                             </div><span>Contracts</span></a>
                     </li>
@@ -401,83 +433,64 @@ END - Breadcrumbs
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header">Contracts</h6>
+                                    <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> 
+                                        <a href="createContract.html" class="text-white">Create new contract</a>
+                                    </button>
+                                    <h6 class="element-header" style="max-width: 70%;">Contracts</h6>
                                     <div class="element-box">
-                                        <h5 class="form-header">Create new Contract</h5>
-                                        <div class="form-row">
-                                            <div class="form-group col-4">
-                                                <label for=""> Item Category</label>
-                                                <select class="form-control">
-                                                    <option>Select item category</option>
-                                                    <option>New York</option>
-                                                    <option>California</option>
-                                                    <option>Boston</option>
-                                                    <option>Texas</option>
-                                                    <option>Colorado</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-3">
-                                                <label for=""> Rate per Ton</label>
-                                                <input class="form-control" placeholder="Rs. 1300" type="password">
-                                            </div>
-                                            <div class="form-group col-3">
-                                                <label for="">Quantity</label>
-                                                <input class="form-control" placeholder="Enter Quantity" type="password">
-                                            </div>
-                                            <div class="form-group col-3">
-                                                <label for=""> Payment Term</label>
-                                                <select class="form-control">
-                                                    <option>Select payment term</option>
-                                                    <option>New York</option>
-                                                    <option>California</option>
-                                                    <option>Boston</option>
-                                                    <option>Texas</option>
-                                                    <option>Colorado</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-7">
-                                                <label> Remark</label>
-                                                <input class="form-control" rows="3">
-                                            </div>
-                                            <div class="form-group col-4">
-                                                <button class="btn float-right mb-1 btn-link" type="submit" id="addBuyer"> Add new Buyer</button>
-                                                <label for=""> Buyer Detail</label>
-                                                <select class="form-control">
-                                                    <option>Select Buyer</option>
-                                                    <option>New York</option>
-                                                    <option>California</option>
-                                                    <option>Boston</option>
-                                                    <option>Texas</option>
-                                                    <option>Colorado</option>
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-4">
-                                                <button class="btn float-right mb-1 btn-link" type="submit"> Add new Consignee</button>
-                                                <label for="">Consignee Detail</label>
-                                                <select class="form-control">
-                                                    <option>Select Consignee</option>
-                                                    <option>New York</option>
-                                                    <option>California</option>
-                                                    <option>Boston</option>
-                                                    <option>Texas</option>
-                                                    <option>Colorado</option>
-                                                </select>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-</div>
-                                            <div class="col-sm-6">
-</div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-6">
-</div>
-                                            <div class="col-sm-6">
-</div>
-                                        </div>
-                                        <div class="form-buttons-w text-right">
-                                            <button class="btn btn-primary" type="submit"> Submit</button>
+                                        <h5 class="form-header">List of Contracts</h5>
+                                        <div class="table-responsive">
+                                            <table class="table table-padded bg-light pl-2 pr-2">
+                                                <thead>
+                                                    <tr>
+                                                        <th>ID</th>
+                                                        <th>Date</th>
+                                                        <th>Item Category</th>
+                                                        <th>Quantiy</th>
+                                                        <th>Total Amount</th>
+                                                        <th>Status</th>
+                                                        <th>Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr id="contract-row">
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Pending</a></td>
+                                                        <td><a class="btn btn-sm btn-primary" href="#">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Pending</a></td>
+                                                        <td><a class="btn btn-sm btn-primary" href="#">Approve</a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Pending</a></td>
+                                                        <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>DL-23144</td>
+                                                        <td>12/06/19</td>
+                                                        <td>GI-Rod</td>
+                                                        <td>300 Ton</td>
+                                                        <td>Rs. 13L</td>
+                                                        <td class="text-success"><a class="btn btn-sm btn-success" href="#">Approved</a></td>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
@@ -514,6 +527,7 @@ END - Sidebar
         <div class="display-type"></div>
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script></script>
     <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
     <script src="bower_components/moment/moment.js"></script>
     <script src="bower_components/chart.js/dist/Chart.min.js"></script>
@@ -543,11 +557,16 @@ END - Sidebar
     <script src="bower_components/bootstrap/js/dist/popover.js"></script>
     <script src="js/demo_customizer-version=4.4.1.js"></script>
     <script src="js/main-version=4.4.1.js"></script>
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-42863888-9', 'auto');
-ga('send', 'pageview');</script>
+    <script>
+        $(document).ready(function() {
+            var row = document.getElementById("contract-row");
+       row.addEventListener("click", function(){
+        location.href="./contract-single.html"
+});
+    //  
+    
+    
+        })
+    
+   </script>
 </body>
