@@ -29,7 +29,7 @@
                         <div class="close-search-suggestions">
                             <i class="os-icon os-icon-x"></i>
                         </div>
-                    </input>
+                    </div>
                 </div>
                 <div class="search-suggestions-group">
                     <div class="ssg-header">
@@ -119,7 +119,7 @@ START - Mobile Menu
 -------------------->
             <div class="menu-mobile color-scheme-dark menu-activated-on-click">
                 <div class="mm-logo-buttons-w bg-white">
-                    <a class="mm-logo" href="index.html"><img src="realdeals-logo.png"><span>Real Deals</span></a>
+                    <a class="mm-logo" href="index.html"><img src="realdeals-logo.png"><span>Clean Admin</span></a>
                     <div class="mm-buttons">
                         <div class="content-panel-open">
                             <div class="os-icon os-icon-grid-circles"></div>
@@ -253,7 +253,7 @@ START - Main Menu
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
                     </li>
-                    <li class="selected active">
+                    <li class="selected">
                         <a href="sales-customersList.html"><div class="icon-w">
                                 <div class="os-icon-layout os-icon os-icon-phone-21"></div>
                             </div><span>Customers</span></a>
@@ -429,7 +429,7 @@ START - Breadcrumbs
                         <a href="index.html">Real Deals</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index.html">Sales Portal</a>
+                        <a href="index.html">Customer Portal</a>
                     </li>
                     <li class="breadcrumb-item">
                         <span>Costumers</span>
@@ -443,136 +443,67 @@ END - Breadcrumbs
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header" style="max-width: 70%;">Customers</h6>
+                                    <h6 class="element-header" style="max-width: 70%;">Travel Claims</h6>
                                     <div class="element-box">
-                                        <h5 class="form-header">Create new customer</h5>
+                                        <h5 class="form-header">Add New Bill</h5>
                                         <form action="">
                                             <legend>
-                                                <span>General Details</span>
+                                                <span>Expense Details</span>
                                             </legend>
                                             <div class="form-row">
                                                 <div class="form-group col-3">
-                                                    <label for=""> GSTIN</label>
-                                                    <input class="form-control" placeholder="Enter gst number" type="text">
+                                                    <label for=""> Expense date</label>
+                                                    <div class="date-input">
+                                                        <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/1978">
+                                                    </div>
                                                 </div>
                                                 <div class="form-group col-3">
-                                                    <label for=""> Firm Name</label>
+                                                    <label for=""> Expense Category</label>
                                                     <input class="form-control" placeholder="Enter firm name" type="text">
                                                 </div>
                                                 <div class="form-group col-3">
-                                                    <label for=""> Name on cheque</label>
+                                                    <label for=""> Bill No.</label>
                                                     <input class="form-control" placeholder="Enter name writen on cheque" type="text">
                                                 </div>
                                                 <div class="form-group col-3">
-                                                    <label for=""> Mobile number </label>
+                                                    <label for=""> Amount </label>
                                                     <input class="form-control" placeholder="Enter firm phone number" type="text">
                                                 </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Email</label>
-                                                    <input class="form-control" placeholder="Enter firm email id" type="email">
-                                                </div>
                                                 <div class="form-group col-5">
-                                                    <label for=""> Full Address</label>
+                                                    <label for=""> Remark</label>
                                                     <input class="form-control" placeholder="Enter full address" type="text">
                                                 </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> City</label>
-                                                    <input class="form-control" placeholder="Enter city" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> District</label>
-                                                    <input class="form-control" placeholder="Enter district" type="text">
+                                                <div class="form-group col-3">
+                                                    <label for="" class="mr-3"> GST Bill</label>
+                                                    <br>
+                                                    <input class="form-control mr-2 ml-4" placeholder="Enter full address" type="checkbox">Yes
+                                                    <input class="form-control ml-3 mr-2" placeholder="Enter full address" type="checkbox">NO
                                                 </div>
                                                 <div class="form-group col-3">
-                                                    <label for=""> State</label>
-                                                    <input class="form-control" placeholder="Enter state" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Customer Type</label>
-                                                    <input class="form-control" placeholder="Select customer type" type="text">
+                                                    <label for=""> Bill Image </label>
+                                                    <input placeholder="Enter firm phone number" type="file" class="ml-2">
                                                 </div>
                                             </div>
                                             <legend>
-                                                <span>Contact Details</span>
+                                                <span>Vendor Details</span>
                                             </legend>
                                             <div class="form-row">
                                                 <div class="form-group col-3">
-                                                    <label for=""> Person Name</label>
+                                                    <label for=""> Vendor Name</label>
                                                     <input class="form-control" placeholder="Enter person name" type="text">
                                                 </div>
                                                 <div class="form-group col-2">
-                                                    <label for=""> Department</label>
+                                                    <label for=""> Vendor City</label>
                                                     <input class="form-control" placeholder="Enter Department" type="text">
                                                 </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> Designation</label>
-                                                    <input class="form-control" placeholder="Enter Designation" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> Landline Number </label>
-                                                    <input class="form-control" placeholder="0771 - number" type="text">
-                                                </div>
                                                 <div class="form-group col-3">
-                                                    <label for=""> Mobile Number</label>
+                                                    <label for=""> GST Number</label>
                                                     <input class="form-control" placeholder="Enter mobile number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Fax Number</label>
-                                                    <input class="form-control" placeholder="Enter fax number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Email</label>
-                                                    <input class="form-control" placeholder="Enter email" type="email">
-                                                </div>
-                                                <div class="form-group col-6">
-                                                    <label for=""> Remark</label>
-                                                    <input class="form-control" placeholder="Enter remark" type="text">
-                                                </div>
-                                                <div class="form-group col-12">
-                                                    <button class="btn mb-1 btn-link float-right" type="submit"> Add another contact</button>
                                                 </div>
                                             </div>
                                             <div class="controls-below-table">
                                                 <div class="font-weight-bold float-right">
 </div>
-                                            </div>
-                                            <legend>
-                                                <span>Taxation Details</span>
-                                            </legend>
-                                            <div class="form-row">
-                                                <div class="form-group col-3">
-                                                    <label for=""> Registration Type</label>
-                                                    <input class="form-control" placeholder="Firm registration type" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> LBT/FGL/ST No</label>
-                                                    <input class="form-control" placeholder="Enter LBT/FGL/ST No" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> CST No</label>
-                                                    <input class="form-control" placeholder="Enter CST No" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> PAN</label>
-                                                    <input class="form-control" placeholder="Enter PAN" type="text">
-                                                </div>
-                                            </div>
-                                            <legend>
-                                                <span>Bank Details</span>
-                                            </legend>
-                                            <div class="form-row">
-                                                <div class="form-group col-4">
-                                                    <label for=""> Account Number</label>
-                                                    <input class="form-control" placeholder="Enter account number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for="">IFSC</label>
-                                                    <input class="form-control" placeholder="Enter IFSC code" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Bank Name</label>
-                                                    <input class="form-control" placeholder="Enter bank name" type="text">
-                                                </div>
                                             </div>
                                             <div class="form-row">
                                                 <div class="buttons-w float-right">

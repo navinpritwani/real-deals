@@ -29,7 +29,7 @@
                         <div class="close-search-suggestions">
                             <i class="os-icon os-icon-x"></i>
                         </div>
-                    </input>
+                    </div>
                 </div>
                 <div class="search-suggestions-group">
                     <div class="ssg-header">
@@ -238,33 +238,33 @@ START - Main Menu
                 </div>
                 <h1 class="menu-page-header">Page Header</h1>
                 <ul class="main-menu">
-                    <li class="selected">
-                        <a><div class="icon-w">
+                    <li class="selected active">
+                        <a href="index.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-ui-55"></div>
                             </div><span>Dashboard</span></a>
                     </li>
                     <li class="selected">
-                        <a href="sales-contract.html"><div class="icon-w">
+                        <a href="contract.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-documents-03"></div>
                             </div><span>Contracts</span></a>
                     </li>
                     <li class="selected">
-                        <a href="sales-LoadingAdvice.html"><div class="icon-w">
+                        <a href="LoadingAdvice.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
                     </li>
-                    <li class="selected active">
-                        <a href="sales-customersList.html"><div class="icon-w">
+                    <li class="selected">
+                        <a href="customers.html"><div class="icon-w">
                                 <div class="os-icon-layout os-icon os-icon-phone-21"></div>
                             </div><span>Customers</span></a>
                     </li>
                     <li class="selected">
-                        <a href="sales-targets.html"><div class="icon-w">
+                        <a href="customers.html"><div class="icon-w">
                                 <div class="os-icon os-icon-bar-chart-stats-up"></div>
                             </div><span>Sales Target</span></a>
                     </li>
                     <li class="selected">
-                        <a href="sales-travelClaims.html"><div class="icon-w">
+                        <a href="ForwardAuction.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-coins-4"></div>
                             </div><span>Travel Claims</span></a>
                     </li>
@@ -401,9 +401,6 @@ START - User avatar and menu in secondary top menu
                                             <a href="users_profile_small.html"><i class="os-icon os-icon-coins-4"></i><span>Billing Details</span></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="os-icon os-icon-others-43"></i><span>Notifications</span></a>
-                                        </li>
-                                        <li>
                                             <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
                                         </li>
                                     </ul>
@@ -429,157 +426,72 @@ START - Breadcrumbs
                         <a href="index.html">Real Deals</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index.html">Sales Portal</a>
+                        <a href="index.html">Customer Portal</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <span>Costumers</span>
+                        <span>Dashboard</span>
                     </li>
                 </ul>
                 <!--------------------
 END - Breadcrumbs
 -------------------->
-                <div class="content-i" style="height: 100vh;">
+                <div class="content-i">
                     <div class="content-box">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header" style="max-width: 70%;">Customers</h6>
-                                    <div class="element-box">
-                                        <h5 class="form-header">Create new customer</h5>
-                                        <form action="">
-                                            <legend>
-                                                <span>General Details</span>
-                                            </legend>
-                                            <div class="form-row">
-                                                <div class="form-group col-3">
-                                                    <label for=""> GSTIN</label>
-                                                    <input class="form-control" placeholder="Enter gst number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Firm Name</label>
-                                                    <input class="form-control" placeholder="Enter firm name" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Name on cheque</label>
-                                                    <input class="form-control" placeholder="Enter name writen on cheque" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Mobile number </label>
-                                                    <input class="form-control" placeholder="Enter firm phone number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Email</label>
-                                                    <input class="form-control" placeholder="Enter firm email id" type="email">
-                                                </div>
-                                                <div class="form-group col-5">
-                                                    <label for=""> Full Address</label>
-                                                    <input class="form-control" placeholder="Enter full address" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> City</label>
-                                                    <input class="form-control" placeholder="Enter city" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> District</label>
-                                                    <input class="form-control" placeholder="Enter district" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> State</label>
-                                                    <input class="form-control" placeholder="Enter state" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Customer Type</label>
-                                                    <input class="form-control" placeholder="Select customer type" type="text">
+                                    <h6 class="element-header">Dashboard</h6>
+                                    <div class="element-content">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Monthly Target</div><div class="value">570 TON</div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Target Achieved</div><div class="value">12 TON</div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Active Contract</div><div class="value">4</div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <div class="element-wrapper">
+                                                    <h6 class="element-header">Live Rates</h6>
+                                                    <div class="element-box-tp">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-padded">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Item Category</th>
+                                                                        <th class="text-right">Amount per ton</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>TMT</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>Rod</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <legend>
-                                                <span>Contact Details</span>
-                                            </legend>
-                                            <div class="form-row">
-                                                <div class="form-group col-3">
-                                                    <label for=""> Person Name</label>
-                                                    <input class="form-control" placeholder="Enter person name" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> Department</label>
-                                                    <input class="form-control" placeholder="Enter Department" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> Designation</label>
-                                                    <input class="form-control" placeholder="Enter Designation" type="text">
-                                                </div>
-                                                <div class="form-group col-2">
-                                                    <label for=""> Landline Number </label>
-                                                    <input class="form-control" placeholder="0771 - number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Mobile Number</label>
-                                                    <input class="form-control" placeholder="Enter mobile number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Fax Number</label>
-                                                    <input class="form-control" placeholder="Enter fax number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Email</label>
-                                                    <input class="form-control" placeholder="Enter email" type="email">
-                                                </div>
-                                                <div class="form-group col-6">
-                                                    <label for=""> Remark</label>
-                                                    <input class="form-control" placeholder="Enter remark" type="text">
-                                                </div>
-                                                <div class="form-group col-12">
-                                                    <button class="btn mb-1 btn-link float-right" type="submit"> Add another contact</button>
-                                                </div>
-                                            </div>
-                                            <div class="controls-below-table">
-                                                <div class="font-weight-bold float-right">
-</div>
-                                            </div>
-                                            <legend>
-                                                <span>Taxation Details</span>
-                                            </legend>
-                                            <div class="form-row">
-                                                <div class="form-group col-3">
-                                                    <label for=""> Registration Type</label>
-                                                    <input class="form-control" placeholder="Firm registration type" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> LBT/FGL/ST No</label>
-                                                    <input class="form-control" placeholder="Enter LBT/FGL/ST No" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> CST No</label>
-                                                    <input class="form-control" placeholder="Enter CST No" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> PAN</label>
-                                                    <input class="form-control" placeholder="Enter PAN" type="text">
-                                                </div>
-                                            </div>
-                                            <legend>
-                                                <span>Bank Details</span>
-                                            </legend>
-                                            <div class="form-row">
-                                                <div class="form-group col-4">
-                                                    <label for=""> Account Number</label>
-                                                    <input class="form-control" placeholder="Enter account number" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for="">IFSC</label>
-                                                    <input class="form-control" placeholder="Enter IFSC code" type="text">
-                                                </div>
-                                                <div class="form-group col-3">
-                                                    <label for=""> Bank Name</label>
-                                                    <input class="form-control" placeholder="Enter bank name" type="text">
-                                                </div>
-                                            </div>
-                                            <div class="form-row">
-                                                <div class="buttons-w float-right">
-                                                    <a class="btn btn-primary" href="customers.html">Submit</a>
-                                                </div>
-                                            </div>
-                                        </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
