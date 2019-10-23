@@ -249,7 +249,7 @@ START - Main Menu
                                 <div class="os-icon os-icon-layout os-icon-documents-03"></div>
                             </div><span>Contracts</span></a>
                     </li>
-                    <li class="selected">
+                    <li class="selected active">
                         <a href="customer-LoadingAdvice.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
@@ -259,7 +259,7 @@ START - Main Menu
                                 <div class="os-icon-layout os-icon os-icon-phone-21"></div>
                             </div><span>Complaints</span></a>
                     </li>
-                    <li class="selected active">
+                    <li class="selected">
                         <a href="ForwardAuction.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-coins-4"></div>
                             </div><span>Forward Auction</span></a>
@@ -434,7 +434,35 @@ END - Breadcrumbs
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header">Forward Auction</h6>
+                                    <div class="element-actions">
+                                        <form class="form-inline justify-content-sm-end">
+                                            <select class="form-control form-control-sm rounded">
+                                                <option value="Cancelled">Last 30 Days</option>
+                                                <option value="Pending">Today</option>
+                                                <option value="Active">Last Week </option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <h6 class="element-header">Contract Stats</h6>
+                                    <div class="element-content">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Total Quantity Booked</div><div class="value">570 TON</div><div class="trending trending-up-basic">
+                                                        <span>12%</span>
+                                                        <i class="os-icon os-icon-arrow-up2"></i>
+                                                    </div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Active Contract</div><div class="value">4</div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Total Dispatched</div><div class="value">12 TON</div><div class="trending trending-down-basic">
+                                                        <span>9%</span>
+                                                        <i class="os-icon os-icon-arrow-down"></i>
+                                                    </div></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
