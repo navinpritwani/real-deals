@@ -249,7 +249,7 @@ START - Main Menu
                             </div><span>Contracts</span></a>
                     </li>
                     <li class="selected">
-                        <a href="dispatch-portal-do-list.html"><div class="icon-w">
+                        <a href="dispatch-portal-do.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
                     </li>
@@ -406,7 +406,7 @@ START - Breadcrumbs
                         <a href="index.html">Real Deals</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <a href="index.html">Customer Portal</a>
+                        <a href="index.html">Dispatch Portal</a>
                     </li>
                     <li class="breadcrumb-item">
                         <span>Dashboard</span>
@@ -420,70 +420,138 @@ END - Breadcrumbs
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <h6 class="element-header">Dashboard</h6>
-                                    <div class="element-content">
+                                    <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> Generate Invoice</button>
+                                    <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> Edit Advice</button>
+                                    <h6 class="element-header">Loading Advice</h6>
+                                    <div class="element-box">
+                                        <div class="float-right">
+                                            <strong class="pr-1">Status : </strong>
+                                            <div class="status-pill green" data-title="Complete" data-toggle="tooltip"> </div>                                                                                                                                                                                                                                                                            Loading
+                                        </div>
+                                        <h5 class="form-header">Order ID - DL-1234</h5>
+                                        <h6>Dispatch  Details</h6>
                                         <div class="row">
-                                            <div class="col-sm-4 col-xxxl-3">
-                                                <a class="element-box el-tablo" href="#"><div class="label">Dispatch Order</div><div class="value">570 TON</div></a>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Contract : 
+                                                        <strong>DL-1234</strong>
+                                                    </li>
+                                                    <li>Order No. : 
+                                                        <strong>OD-1234</strong>
+                                                    </li>
+                                                    <li>Quantity (Approx) : 
+                                                        <strong>25 Ton</strong>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                            <div class="col-sm-4 col-xxxl-3">
-                                                <a class="element-box el-tablo" href="#"><div class="label">Vehicle Loading</div><div class="value">12</div></a>
-                                            </div>
-                                            <div class="col-sm-4 col-xxxl-3">
-                                                <a class="element-box el-tablo" href="#"><div class="label">Active Dispatch Order</div><div class="value">4</div></a>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Gate Entry date : 
+                                                        <strong>12/10/19</strong>
+                                                    </li>
+                                                    <li>Gate date no. : 
+                                                        <strong>--</strong>
+                                                    </li>
+                                                    <li>Out date Entry : 
+                                                        <strong>--</strong>
+                                                    </li>
+                                                    <li>Container No, : 
+                                                        <strong>1 Ton</strong>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="element-box">
-                                    <h5 class="form-header">Dispatch Orders</h5>
-                                    <div class="table-responsive">
-                                        <table class="table table-padded bg-light pl-2 pr-2">
-                                            <thead>
-                                                <tr>
-                                                    <th>Order ID</th>
-                                                    <th>Date</th>
-                                                    <th>Vehicle No.</th>
-                                                    <th>Contract</th>
-                                                    <th>Quantiy(aprox.)</th>
-                                                    <th>Status</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>DL-23144</td>
-                                                    <td>12/06/19</td>
-                                                    <td>CG04 MU 6544</td>
-                                                    <td>DL-23144</td>
-                                                    <td>25 ton</td>
-                                                    <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Loading</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>DL-23144</td>
-                                                    <td>12/06/19</td>
-                                                    <td>CG04 MU 6544</td>
-                                                    <td>DL-23144</td>
-                                                    <td>25 ton</td>
-                                                    <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Loading</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>DL-23144</td>
-                                                    <td>12/06/19</td>
-                                                    <td>CG04 MU 6544</td>
-                                                    <td>DL-23144</td>
-                                                    <td>25 ton</td>
-                                                    <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Loading</a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>DL-23144</td>
-                                                    <td>12/06/19</td>
-                                                    <td>CG04 MU 6544</td>
-                                                    <td>DL-23144</td>
-                                                    <td>25 ton</td>
-                                                    <td class="text-danger"><a class="btn btn-sm btn-danger" href="#">Loading</a></td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>Vehicle Details</h6>
+                                                <ul>
+                                                    <li>Vehicle No.  : 
+                                                        <strong>CG 04 MU 6544</strong>
+                                                    </li>
+                                                    <li>Vehicle Type : 
+                                                        <strong>Sarona</strong>
+                                                    </li>
+                                                    <li>Transporter : 
+                                                        <strong>Sai transports</strong>
+                                                    </li>
+                                                    <li>From Place : 
+                                                        <strong>Raipur</strong>
+                                                    </li>
+                                                    <li>To Place : 
+                                                        <strong>Siltara</strong>
+                                                    </li>
+                                                    <li>Security Remark : 
+                                                        <strong>--</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>Driver Details</h6>
+                                                <ul>
+                                                    <li>Driver Name : 
+                                                        <strong>Ravi Kumar</strong>
+                                                    </li>
+                                                    <li>Driver Mobile Number : 
+                                                        <strong>99-999-99999</strong>
+                                                    </li>
+                                                    <li>Driver Licence Number : 
+                                                        <strong>CG04 123456789</strong>
+                                                    </li>
+                                                    <li>Driver Licence Expiry : 
+                                                        <strong>12/10/22</strong>
+                                                    </li>
+                                                    <li>Driver Address : 
+                                                        <strong>Lakhe nagar , Raipur</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6>Item Details</h6>
+                                                <div class="table-responsive">
+                                                    <!--------------------
+START - Basic Table
+-------------------->
+                                                    <table class="table table-padded bg-light pl-2 pr-2">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Sr. No</th>
+                                                                <th>Code</th>
+                                                                <th>Div</th>
+                                                                <th class="text-center">Item Name</th>
+                                                                <th class="text-center">UM</th>
+                                                                <th class="text-right">Rate</th>
+                                                                <th class="text-right">Disc.</th>
+                                                                <th class="text-right">Qty</th>
+                                                                <th class="text-right">Material Value</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>FFIX02004</td>
+                                                                <td>
+    RM</td>
+                                                                <td class="text-center">TMT Bar 16 mm (F) Fe-500</td>
+                                                                <td class="text-right">MT</td>
+                                                                <td class="text-right">
+                                                                            Rs. 37,685.00</td>
+                                                                <td class="text-right">
+                                                                            Rs. 600</td>
+                                                                <td class="text-right">
+                                                                            1.00</td>
+                                                                <td class="text-right">
+                                                                            Rs. 37,085.0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--------------------
+END - Basic Table
+-------------------->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
