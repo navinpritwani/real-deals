@@ -716,3 +716,11 @@ tr {
         display: none !important;
     }
 }
+
+.chat-input input {
+    padding: 20px 20px 20px 0px;
+    border: none;
+    display: block;
+    width: 100%;
+    outline: none;
+}

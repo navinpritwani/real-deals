@@ -507,7 +507,7 @@ START - Basic Table
 -------------------->
                                                     <table class="table table-padded bg-light pl-2 pr-2">
                                                         <thead>
-                                                            <tr>
+                                                            <tr class="advice1-row">
                                                                 <th>ID</th>
                                                                 <th>Dispatch Date</th>
                                                                 <th>Contract</th>
@@ -517,7 +517,7 @@ START - Basic Table
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr>
+                                                            <tr class="advice1-row">
                                                                 <td>DL-1234</td>
                                                                 <td>12/6/19</td>
                                                                 <td>
@@ -528,7 +528,7 @@ START - Basic Table
                                                                     <div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                                                                                                                                                                                                                                                                                                         Loading
                                                                 </td>
                                                             </tr>
-                                                            <tr>
+                                                            <tr class="advice1-row">
                                                                 <td>DL-1234</td>
                                                                 <td>12/6/19</td>
                                                                 <td>
@@ -539,7 +539,7 @@ START - Basic Table
                                                                     <div class="status-pill red" data-title="Complete" data-toggle="tooltip"></div>                                                                                                                                                                                                                                                                                                                                                                                                                             Pending
                                                                 </td>
                                                             </tr>
-                                                            <tr>
+                                                            <tr class="advice1-row">
                                                                 <td>DL-1234</td>
                                                                 <td>12/6/19</td>
                                                                 <td>
@@ -622,11 +622,15 @@ END - Sidebar
     <script src="bower_components/bootstrap/js/dist/popover.js"></script>
     <script src="js/demo_customizer-version=4.4.1.js"></script>
     <script src="js/main-version=4.4.1.js"></script>
-    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-42863888-9', 'auto');
-ga('send', 'pageview');</script>
+    <script>
+        $(document).ready(function() {
+            var row = $(".advice1-row").on("click", function(){
+        location.href="customer-loadingAdvice-single.html"
+        });
+    //  
+    
+    
+        })
+    
+   </script>
 </body>

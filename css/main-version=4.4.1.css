@@ -17223,7 +17223,6 @@ body.menu-side-right .layout-w {
     float: right;
     position: relative;
     z-index: 2;
-    margin-top: -0.2rem;
 }
 
 .element-wrapper .element-actions select.form-control-sm,
@@ -17685,7 +17684,8 @@ a.el-tablo:hover .label {
 }
 
 .el-chart-w+.el-legend {
-    border-top: 1px solid rgba(0,0,0,0.1);
+    /*border-top: 1px solid rgba(0,0,0,0.1)
+ */
     padding-top: 1.5rem;
     margin-top: 2rem;
 }
