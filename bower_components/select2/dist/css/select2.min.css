@@ -724,3 +724,7 @@ tr {
     width: 100%;
     outline: none;
 }
+
+.table-padded .trending.trending-up-basic {
+    float: left;
+}

@@ -379,14 +379,17 @@ END - Breadcrumbs
                                     <div class="element-actions">
                                         <form class="form-inline justify-content-sm-end">
                                             <select class="form-control form-control-sm rounded">
-                                                <option value="Pending" style="min-height: 2em !important;">API Ispat</option>
-                                                <option value="Active">GK</option>
+                                                <option value="Pending">All Plants</option>
+                                                <option value="Pending">API Ispat</option>
+                                                <option value="Active">Real</option>
                                                 <option value="Cancelled">Real Wire</option>
                                             </select>
                                             <select class="form-control form-control-sm rounded">
-                                                <option value="Pending">Today</option>
-                                                <option value="Active">Last Week </option>
-                                                <option value="Cancelled">Last 30 Days</option>
+                                                <option value="Active">Today </option>
+                                                <option value="Active">Yesterday </option>
+                                                <option value="Active">This Month </option>
+                                                <option value="Cancelled">This Quater</option>
+                                                <option value="Cancelled">This Year</option>
                                             </select>
                                         </form>
                                     </div>
@@ -396,10 +399,10 @@ END - Breadcrumbs
                                             <div class="row">
                                                 <div class="col-sm-5 col-xxl-4">
                                                     <div class="tablos">
-                                                        <div class="row mb-xl-2 mb-xxl-3">
+                                                        <div class="mb-xl-2 mb-xxl-3 row">
                                                             <div class="col-sm-12">
-                                                                <a class="element-box el-tablo centered trend-in-corner padded bold-label" href="apps_support_index.html"><div class="value">240 Ton</div><div class="label">Pending Orders</div><div class="trending trending-up-basic">
-                                                                        <span>12%</span>
+                                                                <a class="element-box el-tablo centered trend-in-corner padded bold-label" href="apps_support_index.html"><div class="value">240K Ton</div><div class="label">Total Sales</div><div class="trending trending-up-basic">
+                                                                        <span>12 Ton</span>
                                                                         <i class="os-icon os-icon-arrow-up2"></i>
                                                                     </div></a>
                                                             </div>
@@ -407,7 +410,7 @@ END - Breadcrumbs
                                                         <div class="row">
                                                             <div class="col-sm-12">
                                                                 <a class="element-box el-tablo centered trend-in-corner padded bold-label" href="apps_support_index.html"><div class="value">520 Ton</div><div class="label">Active Contracts</div><div class="trending trending-up-basic">
-                                                                        <span>12%</span>
+                                                                        <span>12 Ton</span>
                                                                         <i class="os-icon os-icon-arrow-up2"></i>
                                                                     </div></a>
                                                             </div>
@@ -416,13 +419,19 @@ END - Breadcrumbs
                                                 </div>
                                                 <div class="col-sm-7 col-xxl-8">
                                                     <!--START - Chart Box-->
-                                                    <div class="element-box pl-xxl-5 pr-xxl-5">
-                                                        <div class="el-tablo bigger highlight bold-label">
-                                                            <div class="value">12.5K Ton</div>
-                                                            <div class="label">Total Quantity Dispatch</div>
-                                                        </div>
-                                                        <div class="el-chart-w">
-                                                            <canvas height="170px" id="lineChart" width="600px"></canvas>
+                                                    <div class="element-content">
+                                                        <div class="tablo-with-chart">
+                                                            <div class="row">
+                                                                <div class="col-sm-12">
+                                                                    <div class="element-box">
+                                                                        <h5 class="form-header">Item Category wise Sales</h5>
+                                                                        <div style="width: 100%; height: auto;" id="top_x_div">
+</div>
+                                                                    </div>
+                                                                    <!--START - Chart Box-->
+                                                                    <!--END - Chart Box-->
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                     <!--END - Chart Box-->
@@ -432,92 +441,300 @@ END - Breadcrumbs
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
+                            <div class="col-sm-12">
                                 <div class="element-wrapper">
                                     <h6 class="element-header">Item Wise Analytics</h6>
-                                    <div class="element-content">
-                                        <div class="tablo-with-chart">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <div class="element-box">
-                                                        <h5 class="form-header">Item Category wise Orders</h5>
-                                                        <div class="el-chart-w">
-                                                            <canvas height="145" id="barChart1" width="300"></canvas>
-                                                        </div>
-                                                    </div>
-                                                    <!--START - Chart Box-->
-                                                    <!--END - Chart Box-->
+                                    <div class="element-box">
+                                        <div class="os-tabs-w">
+                                            <div class="os-tabs-controls">
+                                                <ul class="nav nav-tabs smaller">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" data-toggle="tab" href="#tab_overview">Monthly</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#tab_sales">Quaterly</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" data-toggle="tab" href="#tab_sales">Yearly</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="tab_overview">
+                                                    <div id="chart_div" style="min-height: 320px;">
+</div>
                                                 </div>
+                                                <div class="tab-pane" id="tab_sales"></div>
+                                                <div class="tab-pane" id="tab_conversion"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-sm-6">
-                                <!--START - Top Selling Chart-->
-                                <div class="element-wrapper">
-                                    <h6 class="element-header">Plant Wise Analytics</h6>
-                                    <div class="element-box row">
-                                        <div class="el-chart-w col-sm-6">
-                                            <canvas height="120" id="donutChart" width="120"></canvas>
-                                            <div class="inside-donut-chart-label">
-                                                <strong>142</strong>
-                                                <span>Total Orders</span>
+                            <div class="col-sm-12">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <!--START - Top Selling Chart-->
+                                        <div class="element-wrapper">
+                                            <h6 class="element-header">Top Customers</h6>
+                                            <div class="element-box">
+                                                <div class="table-responsive">
+                                                    <table class="table table-lightborder">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Customer Name</th>
+                                                                <th class="text-center">Item Category</th>
+                                                                <th class="text-right">Quantity</th>
+                                                                <th class="text-center">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="el-legend condensed col-sm-6">
-                                            <div class="row">
-                                                <div class="col-auto col-xxxxl-6 ml-sm-auto mr-sm-auto col-6">
-                                                    <div class="legend-value-w">
-                                                        <div class="legend-pin legend-pin-squared" style="background-color: #6896f9;"></div>
-                                                        <div class="legend-value">
-                                                            <span>API Ispat</span>
-                                                            <div class="legend-sub-value">14 Orders</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="legend-value-w">
-                                                        <div class="legend-pin legend-pin-squared" style="background-color: #85c751;"></div>
-                                                        <div class="legend-value">
-                                                            <span>Real Ispat</span>
-                                                            <div class="legend-sub-value">26 Orders</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="legend-value-w">
-                                                        <div class="legend-pin legend-pin-squared" style="background-color: #ffcc29;"></div>
-                                                        <div class="legend-value">
-                                                            <span>GK</span>
-                                                            <div class="legend-sub-value">26 Orders</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="legend-value-w">
-                                                        <div class="legend-pin legend-pin-squared" style="background-color: #f37070;"></div>
-                                                        <div class="legend-value">
-                                                            <span>Real Wire</span>
-                                                            <div class="legend-sub-value">26 Orders</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-6 d-lg-none d-xxl-block">
-                                                    <div class="legend-value-w">
-                                                        <div class="legend-pin legend-pin-squared" style="background-color: #806ef9;"></div>
-                                                        <div class="legend-value">
-                                                            <span>Gucci</span>
-                                                            <div class="legend-sub-value">17 Pairs</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="legend-value-w">
-                                                        <div class="legend-pin legend-pin-squared" style="background-color: #d97b70;"></div>
-                                                        <div class="legend-value">
-                                                            <span>Armani</span>
-                                                            <div class="legend-sub-value">12 Pairs</div>
-                                                        </div>
-                                                    </div>
+                                        <!--END - Top Selling Chart-->
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <!--START - Top Selling Chart-->
+                                        <div class="element-wrapper">
+                                            <h6 class="element-header">Top Target Achievers </h6>
+                                            <div class="element-box">
+                                                <div class="table-responsive">
+                                                    <table class="table table-lightborder">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Customer Name</th>
+                                                                <th class="text-center">Item Category</th>
+                                                                <th class="text-right">Quantity</th>
+                                                                <th class="text-center">Action</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="user-with-avatar">
+                                                                        <span class="">John Mayers</span>
+                                                                    </div>
+                                                                </td>
+                                                                <td class="text-center"> TMT</td>
+                                                                <td class="text-right"><span>1200 Ton</span></td>
+                                                                <td class="text-right"><a class="btn btn-sm btn-primary" href="#">Appreciate</a></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
                                             </div>
+                                        </div>
+                                        <!--END - Top Selling Chart-->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxxl-3 col-sm-6">
+                                <div class="element-wrapper">
+                                    <h6 class="element-header">Live Rates</h6>
+                                    <div class="element-box-tp">
+                                        <div class="table-responsive">
+                                            <table class="table table-padded">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item Category</th>
+                                                        <th class="text-right">Amount per ton</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                        <td class="text-right bolder nowrap">
+                                                            <span class="text-success">Rs. 1,250 </span>
+                                                            <div class="trending trending-up-basic">
+                                                                <span style="font-size: 12px;">Rs.12</span>
+                                                                <i class="os-icon os-icon-arrow-up2"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>TMT</span></td>
+                                                        <td class="text-right bolder nowrap">
+                                                            <span class="text-success">Rs. 1,250</span>
+                                                            <div class="trending trending-up-basic">
+                                                                <span style="font-size: 12px;">Rs.12</span>
+                                                                <i class="os-icon os-icon-arrow-up2"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>Rod</span></td>
+                                                        <td class="text-right bolder nowrap">
+                                                            <span class="text-success">Rs. 1,250</span>
+                                                            <div class="trending trending-up-basic">
+                                                                <span style="font-size: 12px;">Rs.12</span>
+                                                                <i class="os-icon os-icon-arrow-up2"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                        <td class="text-right bolder nowrap">
+                                                            <span class="text-success">Rs. 1,250</span>
+                                                            <div class="trending trending-up-basic">
+                                                                <span style="font-size: 12px;">Rs.12</span>
+                                                                <i class="os-icon os-icon-arrow-down"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                        <td class="text-right bolder nowrap">
+                                                            <span class="text-success">Rs. 1,250</span>
+                                                            <div class="trending trending-up-basic">
+                                                                <span style="font-size: 12px;">Rs.12</span>
+                                                                <i class="os-icon os-icon-arrow-up2"></i>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>
-                                <!--END - Top Selling Chart-->
+                            </div>
+                            <div class="col-xxxl-3 col-sm-6">
+                                <div class="element-wrapper">
+                                    <h6 class="element-header">Yesterday's Sales</h6>
+                                    <div class="element-box-tp">
+                                        <div class="table-responsive">
+                                            <table class="table table-padded">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Item Category</th>
+                                                        <th class="text-right">Amount per ton</th>
+                                                        <th class="text-right">SOld</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250 </span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-dark">1200 Ton </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>TMT</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-dark">1200 Ton </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>Rod</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-dark">1200 Ton </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-dark">1200 Ton </span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                        <td class="text-right bolder nowrap"><span class="text-dark">1200 Ton </span></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="element-wrapper">
+                                    <div class="element-actions">
+                                        <form class="form-inline justify-content-sm-end">
+                                            <select class="form-control form-control-sm rounded">
+                                                <option value="Active">Today </option>
+                                                <option value="Active">Yesterday </option>
+                                                <option value="Active">This Month </option>
+                                                <option value="Cancelled">This Quater</option>
+                                                <option value="Cancelled">This Year</option>
+                                            </select>
+                                        </form>
+                                    </div>
+                                    <h6 class="element-header">Dispatch Quantity</h6>
+                                    <div class="element-box">
+                                        <h5 class="form-header">Item Category wise Sales</h5>
+                                        <div style="width: 100%; height: auto;" id="top_x_div">
+</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!--------------------
@@ -580,6 +797,7 @@ END - Sidebar
     <script src="bower_components/bootstrap/js/dist/popover.js"></script>
     <script src="js/demo_customizer-version=4.4.1.js"></script>
     <script src="js/main-version=4.4.1.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)

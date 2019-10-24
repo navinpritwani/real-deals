@@ -499,13 +499,98 @@ $(function () {
       });
     }
 
+    google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawStuff);
+
+      function drawStuff() {
+        var data = new google.visualization.arrayToDataTable([
+          ['Item categories', 'Ton'],
+          ["GI Wire", 44],
+          ["TMT", 31],
+          ["Wire Rod", 12],
+          ["HB Wire", 10],
+          ['Other', 3]
+        ]);
+
+        var options = {
+          title: 'Item categories',
+          legend: { position: 'none' },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          axes: {
+            x: {
+              0: { side: 'top', label: 'Ton'} // Top x-axis.
+            }
+          },
+          bar: { groupWidth: "90%" }
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('top_x_div'));
+        chart.draw(data, options);
+      };
+
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'GI Wire', 'TMT', 'HB Wire', 'Wire Rod', 'Other', 'Average'],
+          ['Jan',  165,      938,         522,             998,           450,      614.6],
+          ['Feb',  135,      1120,        599,             1268,          288,      682],
+          ['March',  157,      1167,        587,             807,           397,      623],
+          ['April',  139,      1110,        615,             968,           215,      609.4],
+          ['May',  136,      691,         629,             1026,          366,      569.6]
+        ]);
+
+        var options = {
+          title : 'Monthly item wise sales',
+          vAxis: {title: 'Ton'},
+          hAxis: {title: 'Month'},
+          seriesType: 'bars',
+          series: {5: {type: 'line'}}        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+
+
+      google.charts.load('current', {packages: ['corechart', 'bar']});
+google.charts.setOnLoadCallback(drawBarColors);
+
+function drawBarColors() {
+  var data = google.visualization.arrayToDataTable([
+    ['GI Wire', 'TMT', 'HB Wire', 'Wire Rod', 'Others', { role: 'annotation' } ],
+    ['API Ispat', 10, 24, 20, 32, ''],
+    ['Real Ispat', 16, 22, 23, 30,''],
+    ['GK', 28, 19, 29, 30, ''],
+    ['RIPL', 28, 19, 29, 30, '']
+  ]);
+
+  var options = {
+    height: 400,
+    legend: { position: 'top', maxLines: 3 },
+    bar: { groupWidth: '90%' },
+    isStacked: true,
+    hAxis: {
+      title: 'Ton',
+      minValue: 0
+    },
+    vAxis: {
+      title: 'Plants'
+    }
+  };
+      var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+      chart.draw(data, options);
+    }
+
+
     // init donut chart if element exists
     if ($("#barChart1").length) {
       var barChart1 = $("#barChart1");
       var barData1 = {
         labels: ["GI Wire", "TMT", "Rod", "Sponge", "Wire Rod", "Fly ash"],
         datasets: [{
-          label: "Total Order",
+          label: "Total Sales in Ton",
           backgroundColor: ["#5797FC", "#629FFF", "#6BA4FE", "#74AAFF", "#7AAEFF", '#85B4FF'],
           borderColor: ['rgba(255,99,132,0)', 'rgba(54, 162, 235, 0)', 'rgba(255, 206, 86, 0)', 'rgba(75, 192, 192, 0)', 'rgba(153, 102, 255, 0)', 'rgba(255, 159, 64, 0)'],
           borderWidth: 1,
