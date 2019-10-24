@@ -29,7 +29,7 @@
                         <div class="close-search-suggestions">
                             <i class="os-icon os-icon-x"></i>
                         </div>
-                    </div>
+                    </input>
                 </div>
                 <div class="search-suggestions-group">
                     <div class="ssg-header">
@@ -438,69 +438,197 @@ START - Breadcrumbs
                 <!--------------------
 END - Breadcrumbs
 -------------------->
-                <div class="content-i" style="height: 90vh;">
+                <div class="content-i" style="height: 100vh;">
                     <div class="content-box">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
                                     <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> 
-                                        <a href="sales-createLoadingAdvice.html" class="text-white">Create new Advice</a>
+                                        <a class="text-white" href="customer-createLoadingAdvice.html">Edit Advice</a>
                                     </button>
-                                    <h6 class="element-header" style="max-width: 70%;">Loading Advices</h6>
+                                    <h6 class="element-header">Loading Advice</h6>
                                     <div class="element-box">
-                                        <h5 class="form-header">List of Loading Advice</h5>
-                                        <div class="table-responsive">
-                                            <!--------------------
+                                        <div class="float-right">
+                                            <strong class="pr-1">Status : </strong>
+                                            <div class="status-pill green" data-title="Complete" data-toggle="tooltip"> </div>                                                                                                                                                                                                                                                                                                                    Loading
+                                        </div>
+                                        <h5 class="form-header">Loading Advice no.  DL-1234</h5>
+                                        <h6>Customer Details</h6>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Company Name : 
+                                                        <strong>RK Steels</strong>
+                                                    </li>
+                                                    <li>Name on cheque: 
+                                                        <strong>RK Steels pvt. ltd.</strong>
+                                                    </li>
+                                                    <li>Mobile Number: 
+                                                        <strong>99-999-99999</strong>
+                                                    </li>
+                                                    <li>Email : 
+                                                        <strong>rksteels@gmail.com</strong>
+                                                    </li>
+                                                    <li>Customer Type : 
+                                                        <strong>Broker</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>City: 
+                                                        <strong>Raipur</strong>
+                                                    </li>
+                                                    <li>District : 
+                                                        <strong>Raipur</strong>
+                                                    </li>
+                                                    <li>State : 
+                                                        <strong>Chhattisgarh</strong>
+                                                    </li>
+                                                    <li>Full Address : 
+                                                        <strong>Raipura Chowk, Ring road 1, raipur</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h6>Dispatch Details</h6>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Dispatch Date : 
+                                                        <strong>Rs. 12/06/19</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Payment Term : 
+                                                        <strong>Next day Payment</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <h6>Lorry Details</h6>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Transporter name : 
+                                                        <strong>Sai Nath Transports</strong>
+                                                    </li>
+                                                    <li>Contact No. : 
+                                                        <strong>99-999-99999</strong>
+                                                    </li>
+                                                    <li>Vehicle No. : 
+                                                        <strong>CG04 MU 6544</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <ul>
+                                                    <li>Driver Name : 
+                                                        <strong>Dakesh Yadav</strong>
+                                                    </li>
+                                                    <li>Driver License No. : 
+                                                        <strong>CG04 12345678</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <h6>Buyer Details</h6>
+                                                <ul>
+                                                    <li>Buyer Name : 
+                                                        <strong>RK Steels</strong>
+                                                    </li>
+                                                    <li>Buyer Address : 
+                                                        <strong>Sarona</strong>
+                                                    </li>
+                                                    <li>Buyer GSTIN : 
+                                                        <strong>CJKPP12345</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <h6>Consignee Details</h6>
+                                                <ul>
+                                                    <li>Consignee Name : 
+                                                        <strong>RK Steels</strong>
+                                                    </li>
+                                                    <li>Consignee Address : 
+                                                        <strong>Sarona</strong>
+                                                    </li>
+                                                    <li>Consignee GSTIN : 
+                                                        <strong>CJKP12345</strong>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h6>Item Details</h6>
+                                                <div class="table-responsive">
+                                                    <!--------------------
 START - Basic Table
 -------------------->
-                                            <table class="table table-padded bg-light pl-2 pr-2">
-                                                <thead>
-                                                    <tr>
-                                                        <th>ID</th>
-                                                        <th>Customer</th>
-                                                        <th>Dispatch Date</th>
-                                                        <th>Contract</th>
-                                                        <th class="text-center">Quantity</th>
-                                                        <th class="text-right">Vehicle No.</th>
-                                                        <th class="text-right">Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr id="advice-row">
-                                                        <td>DL-1234</td>
-                                                        <td>RK Steels</td>
-                                                        <td>12/6/19</td>
-                                                        <td>
-    DL-1234</td>
-                                                        <td class="text-center">25 Ton </td>
-                                                        <td class="text-right">CG04MU6544</td>
-                                                        <td class="text-right"> <a class="btn btn-sm btn-primary" href="#"><div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div> Loading</a> </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>DL-1234</td>
-                                                        <td>RK Steels</td>
-                                                        <td>12/6/19</td>
-                                                        <td>
-    DL-1234</td>
-                                                        <td class="text-center">25 Ton </td>
-                                                        <td class="text-right">CG04MU6544</td>
-                                                        <td class="text-right"> <a class="btn btn-sm btn-danger" href="#"><div class="status-pill" data-title="Complete" data-toggle="tooltip"></div> Pending</a> </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>DL-1234</td>
-                                                        <td>RK Steels</td>
-                                                        <td>12/6/19</td>
-                                                        <td>
-    DL-1234</td>
-                                                        <td class="text-center">25 Ton </td>
-                                                        <td class="text-right">CG04MU6544</td>
-                                                        <td class="text-right"> <a class="btn btn-sm btn-primary" href="#"><div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div> Loading</a> </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <!--------------------
+                                                    <table class="table table-padded bg-light pl-2 pr-2">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Contract</th>
+                                                                <th>Item</th>
+                                                                <th>Quantity</th>
+                                                                <th class="text-center">Rate</th>
+                                                                <th class="text-right">Discount</th>
+                                                                <th class="text-right">Total Amouunt</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>DL-1234 : GI Wire</td>
+                                                                <td>GI Wire 6mm (Fe 500)</td>
+                                                                <td>
+    5 Ton</td>
+                                                                <td class="text-center">1300 / ton</td>
+                                                                <td class="text-right">12 /ton</td>
+                                                                <td class="text-right">
+                                                                            Rs. 23000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DL-1234 : GI Wire</td>
+                                                                <td>GI Wire 6mm (Fe 500)</td>
+                                                                <td>
+    5 Ton</td>
+                                                                <td class="text-center">1300 / ton</td>
+                                                                <td class="text-right">12 /ton</td>
+                                                                <td class="text-right">
+                                                                            Rs. 23000</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>DL-1234 : GI Wire</td>
+                                                                <td>GI Wire 6mm (Fe 500)</td>
+                                                                <td>
+    5 Ton</td>
+                                                                <td class="text-center">1300 / ton</td>
+                                                                <td class="text-right">12 /ton</td>
+                                                                <td class="text-right">
+                                                                            Rs. 23000</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <!--------------------
 END - Basic Table
 -------------------->
+                                                </div>
+                                                <hr/>
+                                                <div class="controls-below-table">
+                                                    <div class="font-weight-bold" style="font-size: 18px;">
+                                                        Total Amount
+</div>
+                                                    <div class="font-weight-bold" style="font-size: 18px;">
+                                                        Rs. 45000
+</div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -566,16 +694,11 @@ END - Sidebar
     <script src="bower_components/bootstrap/js/dist/popover.js"></script>
     <script src="js/demo_customizer-version=4.4.1.js"></script>
     <script src="js/main-version=4.4.1.js"></script>
-    <script>
-            $(document).ready(function() {
-                var row = document.getElementById("advice-row");
-           row.addEventListener("click", function(){
-            location.href="sales-loadingAdvice-single.html"
-    });
-        //  
-        
-        
-            })
-        
-       </script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-42863888-9', 'auto');
+ga('send', 'pageview');</script>
 </body>

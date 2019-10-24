@@ -224,6 +224,12 @@ END - Mobile Menu List
 -------------------->
                 </div>
             </div>
+            <!--------------------
+END - Mobile Menu
+-------------------->
+            <!--------------------
+START - Main Menu
+-------------------->
             <div class="menu-w sub-menu-color-bright menu-activated-on-hover menu-has-selected-link sub-menu-style-over menu-layout-compact menu-side-left menu-position-side selected-menu-color-light color-scheme-dark">
                 <div class="text-center p-4">
                     <a class="logo" href="index.html"><div class="pt-4 pb-4 bg-white">
@@ -232,7 +238,7 @@ END - Mobile Menu List
                 </div>
                 <h1 class="menu-page-header">Page Header</h1>
                 <ul class="main-menu">
-                    <li class="selected">
+                    <li class="selected active">
                         <a><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-ui-55"></div>
                             </div><span>Dashboard</span></a>
@@ -242,7 +248,7 @@ END - Mobile Menu List
                                 <div class="os-icon os-icon-layout os-icon-documents-03"></div>
                             </div><span>Contracts</span></a>
                     </li>
-                    <li class="selected active">
+                    <li class="selected">
                         <a href="sales-LoadingAdvice.html"><div class="icon-w">
                                 <div class="os-icon os-icon-layout os-icon-tasks-checked"></div>
                             </div><span>Loading Advice</span></a>
@@ -284,12 +290,6 @@ END - Mobile Menu List
                     <img src="real-wire@3x.png" class="ml-2"/>
                 </div>
             </div>
-            <!--------------------
-END - Mobile Menu
--------------------->
-            <!--------------------
-START - Main Menu
--------------------->
             <!--------------------
 END - Main Menu
 -------------------->
@@ -401,9 +401,6 @@ START - User avatar and menu in secondary top menu
                                             <a href="users_profile_small.html"><i class="os-icon os-icon-coins-4"></i><span>Billing Details</span></a>
                                         </li>
                                         <li>
-                                            <a href="#"><i class="os-icon os-icon-others-43"></i><span>Notifications</span></a>
-                                        </li>
-                                        <li>
                                             <a href="#"><i class="os-icon os-icon-signs-11"></i><span>Logout</span></a>
                                         </li>
                                     </ul>
@@ -432,75 +429,69 @@ START - Breadcrumbs
                         <a href="index.html">Customer Portal</a>
                     </li>
                     <li class="breadcrumb-item">
-                        <span>Loading Advice</span>
+                        <span>Dashboard</span>
                     </li>
                 </ul>
                 <!--------------------
 END - Breadcrumbs
 -------------------->
-                <div class="content-i" style="height: 90vh;">
+                <div class="content-i">
                     <div class="content-box">
                         <div class="row">
                             <div class="col-sm-12">
                                 <div class="element-wrapper">
-                                    <button class="mr-2 mb-2 btn btn-primary btn-rounded float-right" type="button"> 
-                                        <a href="sales-createLoadingAdvice.html" class="text-white">Create new Advice</a>
-                                    </button>
-                                    <h6 class="element-header" style="max-width: 70%;">Loading Advices</h6>
-                                    <div class="element-box">
-                                        <h5 class="form-header">List of Loading Advice</h5>
-                                        <div class="table-responsive">
-                                            <!--------------------
-START - Basic Table
--------------------->
-                                            <table class="table table-padded bg-light pl-2 pr-2">
-                                                <thead>
-                                                    <tr>
-                                                        <th>ID</th>
-                                                        <th>Customer</th>
-                                                        <th>Dispatch Date</th>
-                                                        <th>Contract</th>
-                                                        <th class="text-center">Quantity</th>
-                                                        <th class="text-right">Vehicle No.</th>
-                                                        <th class="text-right">Status</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr id="advice-row">
-                                                        <td>DL-1234</td>
-                                                        <td>RK Steels</td>
-                                                        <td>12/6/19</td>
-                                                        <td>
-    DL-1234</td>
-                                                        <td class="text-center">25 Ton </td>
-                                                        <td class="text-right">CG04MU6544</td>
-                                                        <td class="text-right"> <a class="btn btn-sm btn-primary" href="#"><div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div> Loading</a> </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>DL-1234</td>
-                                                        <td>RK Steels</td>
-                                                        <td>12/6/19</td>
-                                                        <td>
-    DL-1234</td>
-                                                        <td class="text-center">25 Ton </td>
-                                                        <td class="text-right">CG04MU6544</td>
-                                                        <td class="text-right"> <a class="btn btn-sm btn-danger" href="#"><div class="status-pill" data-title="Complete" data-toggle="tooltip"></div> Pending</a> </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>DL-1234</td>
-                                                        <td>RK Steels</td>
-                                                        <td>12/6/19</td>
-                                                        <td>
-    DL-1234</td>
-                                                        <td class="text-center">25 Ton </td>
-                                                        <td class="text-right">CG04MU6544</td>
-                                                        <td class="text-right"> <a class="btn btn-sm btn-primary" href="#"><div class="status-pill green" data-title="Complete" data-toggle="tooltip"></div> Loading</a> </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <!--------------------
-END - Basic Table
--------------------->
+                                    <h6 class="element-header">Dashboard</h6>
+                                    <div class="element-content">
+                                        <div class="row">
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Monthly Target</div><div class="value">570 TON</div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Target Achieved</div><div class="value">12 TON</div></a>
+                                            </div>
+                                            <div class="col-sm-4 col-xxxl-3">
+                                                <a class="element-box el-tablo" href="#"><div class="label">Active Contract</div><div class="value">4</div></a>
+                                            </div>
+                                            <div class="col-xxxl-3 col-sm-5">
+                                                <div class="element-wrapper">
+                                                    <h6 class="element-header">Live Rates</h6>
+                                                    <div class="element-box-tp">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-padded">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th>Item Category</th>
+                                                                        <th class="text-right">Amount per ton</th>
+                                                                        <th class="text-right">Action</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>TMT</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>Rod</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="nowrap"><span class="status-pill smaller green"></span><span>GI Wire</span></td>
+                                                                        <td class="text-right bolder nowrap"><span class="text-success">Rs. 1,250</span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -566,16 +557,11 @@ END - Sidebar
     <script src="bower_components/bootstrap/js/dist/popover.js"></script>
     <script src="js/demo_customizer-version=4.4.1.js"></script>
     <script src="js/main-version=4.4.1.js"></script>
-    <script>
-            $(document).ready(function() {
-                var row = document.getElementById("advice-row");
-           row.addEventListener("click", function(){
-            location.href="sales-loadingAdvice-single.html"
-    });
-        //  
-        
-        
-            })
-        
-       </script>
+    <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-42863888-9', 'auto');
+ga('send', 'pageview');</script>
 </body>
